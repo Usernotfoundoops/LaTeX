@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath}   % For matrices, align environments, \operatorname
+\usepackage{amssymb}   % For math symbols like \oplus
+\usepackage[utf8]{inputenc}  % UTF-8 support
+\usepackage[T1]{fontenc}     % Font encoding
+\usepackage{geometry}        % Optional: adjust margins
+\geometry{margin=1in}
+
+\title{Linear Projector: Kernel and Image}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Definition of a Linear Projector}
+A linear projector $P$ is an idempotent operator satisfying:
+\[
+P^2 = P
+\]
+
+\section{\(\ker P\) (Kernel of \(P\))}
+The kernel (null space) of $P$ is the set of all vectors mapped to the zero vector:
+\[
+\ker P = \{ \mathbf{v} \mid P\mathbf{v} = \mathbf{0} \}
+\]
+For a projector, this is the subspace of vectors "projected away" to nothing.
+
+\section{\(\operatorname{im} P\) (Image of \(P\))}
+The image (range) of $P$ is the set of all achievable outputs of $P$:
+\[
+\operatorname{im} P = \{ \mathbf{w} \mid \exists \mathbf{v}, \mathbf{w} = P\mathbf{v} \}
+\]
+This is the subspace that $P$ projects *onto* — all valid results of the projection live here.
+
+\section{Key Decomposition}
+The full vector space $V$ splits into a \textbf{direct sum} of these two subspaces:
+\[
+V = \ker P \oplus \operatorname{im} P
+\]
+Every vector $\mathbf{v}$ has a unique decomposition:
+\[
+\mathbf{v} = P\mathbf{v} + (\mathbf{v} - P\mathbf{v})
+\]
+where $P\mathbf{v} \in \operatorname{im} P$ and $\mathbf{v} - P\mathbf{v} \in \ker P$.
+
+\section{Example}
+Take the 2D projector:
+\[
+P = \begin{bmatrix}1 & 0 \\ 0 & 0\end{bmatrix}
+\]
+- $\operatorname{im} P = \operatorname{span}\left\{ \begin{bmatrix}1 \\ 0\end{bmatrix} \right\}$ (the x-axis)
+- $\ker P = \operatorname{span}\left\{ \begin{bmatrix}0 \\ 1\end{bmatrix} \right\}$ (the y-axis)
+
+\section{Isometries vs Unitary Operators}
+\subsection{Definitions}
+\begin{itemize}
+    \item \textbf{Isometry} $U$: Linear operator with $U^*U = I$ (norm-preserving, injective).
+    \item \textbf{Unitary operator} $U$: Linear operator with $U^*U = UU^* = I$ (norm-preserving, bijective).
+\end{itemize}
+
+\subsection{Hierarchy}
+All unitary operators are isometries, but not all isometries are unitary (this distinction only appears in infinite-dimensional spaces). In finite dimensions, the two classes are identical.
+
+\subsection{Example: Right Shift on $\ell^2$}
+The right shift operator $R$:
+\[
+R(x_1, x_2, x_3, \dots) = (0, x_1, x_2, x_3, \dots)
+\]
+is an isometry ($R^*R = I$) but not unitary ($RR^* \neq I$, as it is not surjective).
+
+\end{document}

@@ -10,13 +10,20 @@
 \usepackage{helvet}
 \usepackage{multicol}
 \usepackage{xcolor}
+\usepackage[super,square]{natbib}
+\usepackage{chemformula}
+\usepackage{sectsty}
+
+% Center all section headings
+\sectionfont{\centering}
+\subsectionfont{\centering}
 
 % BACKGROUND IMAGE
 \begin{document}
-\AddToShipoutPictureBG*{
-\AtPageLowerLeft{\transparent{0.6}\includegraphics[width=\paperwidth,height=\paperheight]{template-art/Nat/NatTitle_BW.jpg}
-    }
-}
+%\AddToShipoutPictureBG*{
+%\AtPageLowerLeft{\transparent{0.6}\includegraphics[width=\paperwidth,height=\paperheight]{template-art/Nat/NatTitle_BW.jpg}
+%    }
+%}
 
 % NAT FAK LOGO
 \begin{figure}[t]
@@ -39,10 +46,11 @@
     
       % Authors
     {\Large
-    \begin{tabular}{c @{\hspace{2cm}} c}
+    \begin{tabular}{c c}
         Pravin Mani Kannan & Barathraj Radhakrishnan Subramanian \\
         Mat. Nr: 23459332 & Mat. Nr: idk
-    \end{tabular}} \\[1cm]
+    \end{tabular}
+    } \\[1cm]
 
   
 \end{center}
@@ -62,18 +70,307 @@
 
 \pagenumbering{arabic}
 
-
 \section{Introduction}
+In 1902, Lord Kelvin raised a question that would shape low-temperature physics 
+for the next decade: what happens to the electrical resistance of a metal as 
+temperature approaches absolute zero? Would the reduced thermal motion of lattice 
+ions eventually allow electrons to pass without scattering, driving resistance to 
+zero, or would the electrons themselves freeze, sending resistance toward infinity? \cite{vanDelft2010}.
+Neither outcome could be tested without access to temperatures 
+far below anything achievable at the time.
+
+This changed on 10 July 1908, when Kamerlingh Onnes successfully liquefied helium, 
+opening up temperatures below 14\,K for the first time \cite{vanDelft2010}. After 
+early attempts with platinum were hampered by instrumentation limitations, mercury 
+was selected as the test material due to the high purity achievable by distillation.
+It was later found that purity played no significant role in the onset of superconductivity,
+ as the resistance vanished identically in pure mercury and impure amalgams alike, with lead and tin also found to be superconductors shortly after, at transition temperatures near 6.2\,K and 4.2\,K respectively. 
+On 8 April 1911, cooling mercury below 4.2\,K caused its resistance to drop so 
+sharply it fell below the detection limit of the apparatus entirely 
+\cite{vanDelft2010, Buckel2004}.
+
+To quantify the effect, Onnes induced persistent currents in closed superconducting 
+rings and monitored them over time. Any finite resistance $R$ would cause 
+exponential decay as
+
+\begin{equation}
+    I(t) = I_0 \, e^{-\frac{R}{L}t}
+    \label{eq:decay}
+\end{equation}
+
+No such decay was observed, bounding the resistance to at least 14 orders of 
+magnitude below that of copper at 300\,K, a difference comparable to that between 
+a conductor and an insulator \cite{Buckel2004}. In 1933, Meissner and Ochsenfeld 
+further established that superconductors expel magnetic flux entirely from their 
+interior upon cooling below $T_c$, identifying ideal diamagnetism as a second and 
+independent defining property of the superconducting state \cite{Buckel2004}. 
+
+These two phenomena form the experimental basis of this report, in which the 
+superconducting transition of \ch{YBa2Cu3O7} sample
+is characterised through resistive four-point measurements and inductive 
+AC-susceptibility measurements, alongside a demonstration of the 
+Meissner-Ochsenfeld effect through magnetic levitation \cite{experiment}.
+
+
+\newpage
+
+\section{Theoretical Framework}
+Superconductivity is characterised by the complete vanishing of electrical 
+resistance below a material-specific critical temperature, $T_c$, at which 
+point a persistent current can flow indefinitely without dissipation. 
+Unlike an ordinary metallic conductor, whose resistance decreases only 
+gradually as temperature is lowered, a superconductor undergoes an abrupt 
+drop to zero resistance at $T_c$ (see Figure 1.1). The mechanisms governing 
+electrical transport differ fundamentally between metals, semiconductors, 
+and superconductors, and each class exhibits a qualitatively distinct 
+$R(T)$ behaviour. The microscopic basis for superconducting behaviour is 
+provided by BCS theory (Bardeen, Cooper, and Schrieffer, 1957), which 
+describes the formation of Cooper pairs through phonon-mediated 
+electron -- electron attractions, producing a dissipation-free quantum 
+superfluid that carries current without resistance \cite{wiki_super}.
+
 
 \section{Electrical Resistance and Temperature Dependence}
-    \subsection{Metals}
-    \subsection{Semiconductors}
-    \subsection{Superconductors and BCS Theory}
+\subsection{Metals}
+
+
+In a metal, electrical conduction is carried by a gas of free electrons 
+occupying states up to the Fermi energy $E_F$. In the Drude model, a 
+constant electric field accelerates electrons between collisions, and the 
+resulting steady-state current density gives the conductivity \cite{Kittel2005}
+\begin{equation}
+    \sigma = \frac{ne^2\tau}{m_e}
+    \label{eq:drude}
+\end{equation}
+
+where $n$ is the free electron density, $e$ is the electron charge, $m_e$ 
+is the electron mass, and $\tau$ is the mean time between scattering events. 
+The electrical resistivity follows as 
+\begin{equation}
+    \rho = 1/\sigma = m_e/ne^2\tau
+    \label{eq:resistivity}
+\end{equation}
+
+Two scattering mechanisms contribute independently to the total resistivity 
+\cite{Kittel2005}. The first arises from thermally excited lattice vibrations 
+(phonons), which become more pronounced with increasing temperature. The 
+second comes from static crystal imperfections such as impurities and 
+vacancies, which are temperature-independent. At high 
+temperatures $\rho_L \propto T$, where $\rho_L$ is the phonon contribution. So resistance increases linearly. As 
+$T \to 0$, phonon scattering freezes out.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{figures/metal_RT.png}
+    \caption{Schematic $R(T)$ dependence for a typical metal, showing 
+    approximately linear behaviour at high temperatures and saturation 
+    toward a residual resistance $\rho_i$ at low temperatures. Adapted 
+    from Kittel \cite{Kittel2005}.}
+    \label{fig:metal_RT}
+\end{figure}
+
+
+\subsection{Semiconductors}
+
+
+In a semiconductor, the valence and conduction bands are separated by an 
+energy gap $E_g$ of order 1\,eV \cite{Kittel2005}. At zero temperature no 
+free carriers exist and the material is effectively insulating. As 
+temperature increases, electrons are thermally excited across the gap, 
+generating mobile electrons in the conduction band and holes in the valence 
+band, both of which contribute to conduction.
+
+The intrinsic carrier concentration grows exponentially with temperature 
+as 
+\begin{equation} n_i \propto T^{3/2}\exp\!\left(\frac{-E_g}{2k_BT}\right) \end{equation}
+and since this exponential factor dominates, the resistivity decreases with increasing temperature 
+\cite{Kittel2005}
+
+\begin{equation}
+    \rho(T) \propto \exp\!\left(\frac{E_g}{2k_BT}\right)
+    \label{eq:sc_rho}
+\end{equation}
+
+This is the opposite behaviour to metals. A plot of $\ln\rho$ against $1/T$ 
+yields a straight line with slope $E_g/2k_B$, providing a direct way to 
+extract the band gap from resistance measurements \cite{Kittel2005}.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{figures/semiconductor_RT.png}
+    \caption{Schematic $R(T)$ dependence for an intrinsic semiconductor, 
+    showing exponentially decreasing resistance with increasing temperature. 
+    Adapted from Kittel \cite{Kittel2005}.}
+    \label{fig:sc_RT}
+\end{figure}
+
+
+\subsection{Superconductors and BCS Theory}
+
+
+Above $T_c$ a superconductor behaves as a normal metal. Below $T_c$, 
+however, the resistance drops abruptly to zero, which cannot be explained 
+by reduced phonon scattering alone. The Bardeen-Cooper-Schrieffer (BCS) 
+theory (1957) provides the microscopic explanation: a phonon-mediated 
+attractive interaction between electrons near the Fermi surface causes them 
+to form bound pairs known as Cooper pairs \cite{Tinkham1996}. Each Cooper 
+pair consists of two electrons with equal and opposite momenta and opposite 
+spins. The role of phonons in this mechanism was confirmed by the isotope 
+effect, in which $T_c \propto M^{-1/2}$ for different isotopes of the same 
+element \cite{Tinkham1996}.
+
+All Cooper pairs condense into the same macroscopic quantum ground state, 
+described by a single wave function with a well-defined phase 
+\cite{Buckel2004}. This condensate is separated from excited states by an 
+energy gap $\Delta$. A thermal fluctuation cannot scatter the condensate 
+unless it supplies enough energy to break a Cooper pair, which requires 
+$k_BT \sim \Delta$. Below $T_c$ this condition is not met, so scattering 
+is suppressed entirely and resistance vanishes \cite{Tinkham1996}.
+
+The BCS theory predicts a universal relation between the zero-temperature 
+gap and the critical temperature \cite{Tinkham1996}
+
+\begin{equation}
+    2\Delta(0) = 3.52\, k_B T_c
+    \label{eq:bcs_gap_ratio}
+\end{equation}
+
+Experimental values across many materials typically fall in the range 
+$3.0\,k_BT_c$ to $4.5\,k_BT_c$, in good agreement with the BCS prediction 
+\cite{Tinkham1996}.
+
+Near $T_c$ the gap closes continuously following 
+$\Delta(T) \approx 1.74\,\Delta(0)(1-T/T_c)^{1/2}$, characteristic of a 
+second-order phase transition \cite{Tinkham1996}. In practice, real samples 
+such as YBa$_2$Cu$_3$O$_7$ and Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ show a 
+finite transition width $\Delta T_c$ between the onset temperature 
+$T_{c,\mathrm{on}}$ and the zero-resistance temperature $T_{c,0}$, 
+attributed to inhomogeneities in oxygen concentration and crystal quality 
+\cite{experiment}.
+
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.6\textwidth]{figures/superconductor_RT.png}
+    \caption{Schematic $R(T)$ for a superconductor showing metallic 
+    behaviour above $T_c$ and a sharp transition to zero resistance below 
+    it. The characteristic temperatures $T_{c,\mathrm{on}}$, 
+    $T_{c,\mathrm{mid}}$, and $T_{c,0}$ and the transition width 
+    $\Delta T_c$ are indicated. Adapted from \cite{experiment}.}
+    \label{fig:sc_Rtransition}
+\end{figure}
+
 
 \section{Magnetic Properties of Superconductors}
-    \subsection{Ideal Diamagnetism and the Meissner Effect}
-    \subsection{Type-I vs. Type-II Superconductors}
-    \subsection{Flux Quantization and Abrikosov Vortex Lattice}
+
+\subsection{Ideal Diamagnetism and the Meissner Effect}
+
+A superconductor cooled below its critical temperature $T_c$ exhibits 
+perfect diamagnetism, spontaneously expelling all internal magnetic flux 
+in what is known as the Meissner-Ochsenfeld effect, first observed by 
+Meissner and Ochsenfeld in 1933 \cite{Buckel2004}. The external field 
+does not vanish abruptly at the surface but instead penetrates a thin 
+surface layer over a characteristic length scale known as the London 
+penetration depth, defined as
+
+\begin{equation}
+    \lambda_L = \sqrt{\frac{m}{\mu_0 q^2 n_s}},
+    \label{eq:london_depth}
+\end{equation}
+
+where $m$ is the carrier mass, $q$ the charge, $n_s$ the superfluid 
+density, and $\mu_0$ the permeability of free space. Beyond this surface 
+layer the field decays exponentially as
+
+\begin{equation}
+    B(x) = B(0)\exp\!\left(-\frac{x}{\lambda_L}\right),
+    \label{eq:field_decay}
+\end{equation}
+
+becoming negligibly small deep within the bulk. It is worth noting that 
+this behaviour is fundamentally different from that of a perfect classical 
+conductor, and can only be understood within a quantum mechanical 
+framework \cite{Buckel2004, Tinkham1996}.
+
+\begin{figure}[h]
+    \centering
+    \vspace{5cm}
+    \caption{Exponential decay of the magnetic field $B(x)$ within a 
+    superconductor over the London penetration depth $\lambda_L$.}
+    \label{fig:meissner}
+\end{figure}
+
+\subsection{Type-I vs.\ Type-II Superconductors}
+
+Type-I superconductors are characterised by a single critical field $B_c$, 
+below which ideal diamagnetism is maintained and above which 
+superconductivity is abruptly destroyed; elemental superconductors such 
+as mercury and lead fall into this category \cite{Buckel2004, Tinkham1996}. 
+Type-II superconductors instead exhibit two critical fields, $B_{c1}$ and 
+$B_{c2}$, and are distinguished by a Ginzburg-Landau parameter
+
+\begin{equation}
+    \kappa = \frac{\lambda_L}{\xi_{GL}} > \frac{1}{\sqrt{2}},
+    \label{eq:GL_param}
+\end{equation}
+
+where $\xi_{GL}$ is the Ginzburg-Landau coherence length, which gives 
+rise to a negative surface energy between normal and superconducting 
+regions \cite{abrikosov2003, Tinkham1996}. Between $B_{c1}$ and 
+$B_{c2}$, the material enters the Shubnikov phase, in which magnetic 
+flux partially penetrates the sample as discrete flux lines while zero 
+electrical resistance is maintained \cite{Buckel2004}. Notably, virtually 
+all superconducting alloys and compounds discovered since the 1960s, 
+including all known high-temperature superconductors where $B_{c2}$ can 
+exceed 100 T, belong to the Type-II class \cite{abrikosov2003, Buckel2004}.
+
+\begin{figure}[h]
+    \centering
+    \vspace{5cm}
+    \caption{Schematic phase diagram showing the distinction between 
+    Type-I (single critical field $B_c$) and Type-II superconductors 
+    (two critical fields $B_{c1}$ and $B_{c2}$).}
+    \label{fig:type1vs2}
+\end{figure}
+
+\subsection{Flux Quantization and the Abrikosov Vortex Lattice}
+
+In the Shubnikov phase, magnetic flux does not penetrate uniformly but 
+is instead confined to discrete quantised tubes, each carrying exactly 
+one magnetic flux quantum
+
+\begin{equation}
+    \Phi_0 = \frac{h}{2e} \approx 2.07 \times 10^{-15} \text{ T m}^2,
+    \label{eq:flux_quantum}
+\end{equation}
+
+as confirmed experimentally by Doll and Nabauer, and independently by 
+Deaver and Fairbank, in 1961 \cite{Buckel2004}. Each vortex consists 
+of a normal-state core of radius $\xi_{GL}$, which physically represents 
+the spatial extent of a Cooper pair, surrounded by circulating 
+supercurrents that decay over the length scale $\lambda_L$ \cite{Tinkham1996}. 
+The lower and upper critical fields can be estimated as
+
+\begin{equation}
+    B_{c1} \approx \frac{\Phi_0}{\pi\lambda_L^2}, \qquad
+    B_{c2} \approx \frac{\Phi_0}{\pi\xi_{GL}^2},
+    \label{eq:critical_fields}
+\end{equation}
+
+showing that a smaller coherence length gives rise to a substantially 
+larger upper critical field. Using Ginzburg-Landau theory, Abrikosov 
+showed that these vortices arrange into a periodic triangular lattice 
+that minimises the free energy of the mixed state, a prediction later 
+confirmed through neutron diffraction and iron-colloid decoration 
+experiments \cite{abrikosov2003, Buckel2004}.
+
+\begin{figure}[h]
+    \centering
+    \vspace{5cm}
+    \caption{Schematic of the Abrikosov vortex lattice in the Shubnikov 
+    phase, showing the triangular arrangement of flux tubes each 
+    carrying $\Phi_0$.}
+    \label{fig:abrikosov}
+\end{figure}
 
 \section{Magnetic Susceptibility and Magnetization}
     \subsection{Diamagnetic, Paramagnetic, and Ferromagnetic Materials}
@@ -87,4 +384,6 @@
 
 \section{Conclusion}
 
+\bibliographystyle{IEEEtranN}
+\bibliography{bibliography}
 \end{document}
