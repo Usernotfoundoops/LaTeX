@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.2)  11 MAY 2026 06:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.2)  12 MAY 2026 02:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,23 +522,203 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2023/01/24 v1.7a SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen327
+\SC@CAPWD=\dimen328
+\SC@tempdima=\dimen329
+\SC@tempdimb=\dimen330
+\c@SC@C=\count337
+\SC@BOX=\box120
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen331
+\captionmargin=\dimen332
+\caption@leftmargin=\dimen333
+\caption@rightmargin=\dimen334
+\caption@width=\dimen335
+\caption@indent=\dimen336
+\caption@parindent=\dimen337
+\caption@hangindent=\dimen338
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count338
+\c@continuedfloat=\count339
+Package caption Info: sidecap package is loaded.
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip66
+\f@nch@offset@elh=\skip67
+\f@nch@offset@erh=\skip68
+\f@nch@offset@olh=\skip69
+\f@nch@offset@orh=\skip70
+\f@nch@offset@elf=\skip71
+\f@nch@offset@erf=\skip72
+\f@nch@offset@olf=\skip73
+\f@nch@offset@orf=\skip74
+\f@nch@height=\skip75
+\f@nch@footalignment=\skip76
+\f@nch@widthL=\skip77
+\f@nch@widthC=\skip78
+\f@nch@widthR=\skip79
+\@temptokenb=\toks38
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count340
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count341
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen339
+\Hy@linkcounter=\count342
+\Hy@pagecounter=\count343
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count344
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count345
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip20
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen340
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count346
+\Field@Width=\dimen341
+\Fld@charsize=\dimen342
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count347
+\c@Item=\count348
+\c@Hfootnote=\count349
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+\Fld@listcount=\count350
+\c@bookmark@seq@number=\count351
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip80
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip81
+\cftbeforetoctitleskip=\skip82
+\cftaftertoctitleskip=\skip83
+\cftbeforepartskip=\skip84
+\cftpartnumwidth=\skip85
+\cftpartindent=\skip86
+\cftbeforesecskip=\skip87
+\cftsecindent=\skip88
+\cftsecnumwidth=\skip89
+\cftbeforesubsecskip=\skip90
+\cftsubsecindent=\skip91
+\cftsubsecnumwidth=\skip92
+\cftbeforesubsubsecskip=\skip93
+\cftsubsubsecindent=\skip94
+\cftsubsubsecnumwidth=\skip95
+\cftbeforeparaskip=\skip96
+\cftparaindent=\skip97
+\cftparanumwidth=\skip98
+\cftbeforesubparaskip=\skip99
+\cftsubparaindent=\skip100
+\cftsubparanumwidth=\skip101
+\cftbeforeloftitleskip=\skip102
+\cftafterloftitleskip=\skip103
+\cftbeforefigskip=\skip104
+\cftfigindent=\skip105
+\cftfignumwidth=\skip106
+\c@lofdepth=\count352
+\c@lotdepth=\count353
+\cftbeforelottitleskip=\skip107
+\cftafterlottitleskip=\skip108
+\cftbeforetabskip=\skip109
+\cfttabindent=\skip110
+\cfttabnumwidth=\skip111
 ) (./preparatory.aux)
 \openout1 = `preparatory.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -576,53 +756,77 @@ LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
-\scratchdimen=\dimen327
-\scratchbox=\box120
-\nofMPsegments=\count338
-\nofMParguments=\count339
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count340
-\MPscratchDim=\dimen328
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count354
+\scratchdimen=\dimen343
+\scratchbox=\box121
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen344
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-<template-art/Nat/NatKennung.pdf, id=4, 614.3703pt x 76.86215pt>
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip112
+\RaggedLeftLeftskip=\skip113
+\RaggedRightLeftskip=\skip114
+\CenteringRightskip=\skip115
+\RaggedLeftRightskip=\skip116
+\RaggedRightRightskip=\skip117
+\CenteringParfillskip=\skip118
+\RaggedLeftParfillskip=\skip119
+\RaggedRightParfillskip=\skip120
+\JustifyingParfillskip=\skip121
+\CenteringParindent=\skip122
+\RaggedLeftParindent=\skip123
+\RaggedRightParindent=\skip124
+\JustifyingParindent=\skip125
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 31.
+ (./preparatory.out) (./preparatory.out)
+\@outlinefile=\write4
+\openout4 = `preparatory.out'.
+
+<template-art/Nat/NatKennung.pdf, id=78, 614.3703pt x 76.86215pt>
 File: template-art/Nat/NatKennung.pdf Graphic file (type pdf)
 <use template-art/Nat/NatKennung.pdf>
-Package pdftex.def Info: template-art/Nat/NatKennung.pdf  used on input line 31.
+Package pdftex.def Info: template-art/Nat/NatKennung.pdf  used on input line 42.
 (pdftex.def)             Requested size: 317.07614pt x 39.66946pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <46> not available
-(Font)              size <24.88> substituted on input line 42.
+(Font)              size <24.88> substituted on input line 53.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <46> not available
-(Font)              size <24.88> substituted on input line 42.
+(Font)              size <24.88> substituted on input line 53.
 
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 42.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 53.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<template-art/FAUWortmarkeBlau.pdf, id=5, 603.31398pt x 283.62964pt>
+<template-art/FAUWortmarkeBlau.pdf, id=79, 603.31398pt x 283.62964pt>
 File: template-art/FAUWortmarkeBlau.pdf Graphic file (type pdf)
 <use template-art/FAUWortmarkeBlau.pdf>
-Package pdftex.def Info: template-art/FAUWortmarkeBlau.pdf  used on input line 61.
+Package pdftex.def Info: template-art/FAUWortmarkeBlau.pdf  used on input line 72.
 (pdftex.def)             Requested size: 135.89174pt x 63.88315pt.
  [1
 
@@ -630,24 +834,186 @@ Package pdftex.def Info: template-art/FAUWortmarkeBlau.pdf  used on input line 6
 
 pdfTeX warning: pdflatex (file ./template-art/FAUWortmarkeBlau.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./preparatory.toc)
-\tf@toc=\write4
-\openout4 = `preparatory.toc'.
+\tf@toc=\write5
+\openout5 = `preparatory.toc'.
 
- [2] [1] [2]
-Overfull \hbox (2.21693pt too wide) in paragraph at lines 211--221
-\OT1/cmr/m/n/10.95 Cooper-Schrieffer (BCS) the-ory (1957) pro-vides the mi-cro-scopic ex-pla-na-tion: a phonon-mediated
+ [2]
+<figures/Onnes_Actutal_Hg.png, id=121, 680.5425pt x 936.49875pt>
+File: figures/Onnes_Actutal_Hg.png Graphic file (type png)
+<use figures/Onnes_Actutal_Hg.png>
+Package pdftex.def Info: figures/Onnes_Actutal_Hg.png  used on input line 118.
+(pdftex.def)             Requested size: 172.13pt x 236.86775pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[1
+
+ <./figures/Onnes_Actutal_Hg.png>]
+<figures/Relative_R_vs_T_Potassium.png, id=147, 752.8125pt x 821.31844pt>
+File: figures/Relative_R_vs_T_Potassium.png Graphic file (type png)
+<use figures/Relative_R_vs_T_Potassium.png>
+Package pdftex.def Info: figures/Relative_R_vs_T_Potassium.png  used on input line 200.
+(pdftex.def)             Requested size: 147.21318pt x 160.60133pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2 <./figures/Relative_R_vs_T_Potassium.png>]
+<figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png, id=166, 853.1875pt x 334.24875pt>
+File: figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png Graphic file (type png)
+<use figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png>
+Package pdftex.def Info: figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png  used on input line 237.
+(pdftex.def)             Requested size: 362.37569pt x 141.96968pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[3 <./figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png>]
+<figures/BCS.png, id=186, 930.47626pt x 657.95813pt>
+File: figures/BCS.png Graphic file (type png)
+<use figures/BCS.png>
+Package pdftex.def Info: figures/BCS.png  used on input line 273.
+(pdftex.def)             Requested size: 181.18439pt x 128.11559pt.
+<figures/MeissnerFX.png, id=190, 2084.78876pt x 895.345pt>
+File: figures/MeissnerFX.png Graphic file (type png)
+<use figures/MeissnerFX.png>
+Package pdftex.def Info: figures/MeissnerFX.png  used on input line 289.
+(pdftex.def)             Requested size: 269.06714pt x 115.5519pt.
+<figures/Diamagnetism.png, id=193, 502.87875pt x 737.75626pt>
+File: figures/Diamagnetism.png Graphic file (type png)
+<use figures/Diamagnetism.png>
+Package pdftex.def Info: figures/Diamagnetism.png  used on input line 294.
+(pdftex.def)             Requested size: 91.18301pt x 133.76978pt.
+
+Overfull \hbox (4.78447pt too wide) in paragraph at lines 299--306
+\OT1/cmr/m/n/10.95 spon-ta-neously ex-pelling all in-ter-nal mag-netic flux in what is known as the \OT1/cmr/bx/n/10.95 Meissner-Ochsenfeld
  []
 
-[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4 <./figures/BCS.png> <./figures/MeissnerFX.png> <./figures/Diamagnetism.png>]
+<figures/Type1and2.png, id=218, 639.89063pt x 635.37375pt>
+File: figures/Type1and2.png Graphic file (type png)
+<use figures/Type1and2.png>
+Package pdftex.def Info: figures/Type1and2.png  used on input line 353.
+(pdftex.def)             Requested size: 144.94806pt x 143.92242pt.
+<figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png, id=221, 672.5125pt x 352.31625pt>
+File: figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png Graphic file (type png)
+<use figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png>
+Package pdftex.def Info: figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png  used on input line 358.
+(pdftex.def)             Requested size: 226.48395pt x 118.65161pt.
+<figures/vortex.png, id=228, 2015.53pt x 816.04875pt>
+File: figures/vortex.png Graphic file (type png)
+<use figures/vortex.png>
+Package pdftex.def Info: figures/vortex.png  used on input line 394.
+(pdftex.def)             Requested size: 317.07614pt x 128.37894pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] (./preparatory.bbl [5]
-Underfull \hbox (badness 6188) in paragraph at lines 35--37
-[]\OT1/cmr/m/n/10.95 Wikipedia con-trib-u-tors, ``Su-per-con-duc-tiv-ity.'' [On-line]. Avail-able:
- []
 
-) [6] (./preparatory.aux)
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5 <./figures/Type1and2.png> <./figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png>]
+<figures/magnetisation curves - para, dia, ferro.png, id=246, 178.16562pt x 175.15437pt>
+File: figures/magnetisation curves - para, dia, ferro.png Graphic file (type png)
+<use figures/magnetisation curves - para, dia, ferro.png>
+Package pdftex.def Info: figures/magnetisation curves - para, dia, ferro.png  used on input line 413.
+(pdftex.def)             Requested size: 181.18439pt x 178.12859pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6 <./figures/vortex.png> <./figures/magnetisation curves - para, dia, ferro.png>]
+<figures/Expt Part/Four-point resistance measurement setup.png, id=272, 301.62688pt x 173.14688pt>
+File: figures/Expt Part/Four-point resistance measurement setup.png Graphic file (type png)
+<use figures/Expt Part/Four-point resistance measurement setup.png>
+Package pdftex.def Info: figures/Expt Part/Four-point resistance measurement setup.png  used on input line 438.
+(pdftex.def)             Requested size: 217.42265pt x 124.80832pt.
+<figures/Expt Part/Bi....O8 sample preparation.png, id=275, 333.245pt x 174.6525pt>
+File: figures/Expt Part/Bi....O8 sample preparation.png Graphic file (type png)
+<use figures/Expt Part/Bi....O8 sample preparation.png>
+Package pdftex.def Info: figures/Expt Part/Bi....O8 sample preparation.png  used on input line 443.
+(pdftex.def)             Requested size: 217.42265pt x 113.95183pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7 <./figures/Expt Part/Four-point resistance measurement setup.png> <./figures/Expt Part/Bi....O8 sample preparation.png>]
+<figures/Expt Part/Inductive measurement - primary and secondary coil setup.png, id=292, 226.34563pt x 173.14688pt>
+File: figures/Expt Part/Inductive measurement - primary and secondary coil setup.png Graphic file (type png)
+<use figures/Expt Part/Inductive measurement - primary and secondary coil setup.png>
+Package pdftex.def Info: figures/Expt Part/Inductive measurement - primary and secondary coil setup.png  used on input line 456.
+(pdftex.def)             Requested size: 212.89546pt x 162.85847pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8 <./figures/Expt Part/Inductive measurement - primary and secondary coil setup.png>]
+<figures/Expt Part/dipstick illustration (DUT here is device under test).png, id=308, 247.42438pt x 291.0875pt>
+File: figures/Expt Part/dipstick illustration (DUT here is device under test).png Graphic file (type png)
+<use figures/Expt Part/dipstick illustration (DUT here is device under test).png>
+Package pdftex.def Info: figures/Expt Part/dipstick illustration (DUT here is device under test).png  used on input line 509.
+(pdftex.def)             Requested size: 135.89174pt x 159.87209pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9 <./figures/Expt Part/dipstick illustration (DUT here is device under test).png>] (./preparatory.bbl
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11] (./preparatory.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -657,20 +1023,22 @@ L3 programming layer <2026-03-20>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 21.12pt have occurred.
 
+Package rerunfilecheck Info: File `preparatory.out' has not changed.
+(rerunfilecheck)             Checksum: 7B97725B364D248892A63E8EE40BDDD2;3687.
  ) 
 Here is how much of TeX's memory you used:
- 15923 strings out of 467351
- 327560 string characters out of 5415693
- 723206 words of memory out of 5000000
- 44712 multiletter control sequences out of 15000+600000
- 638773 words of font info for 78 fonts, out of 8000000 for 9000
+ 25275 strings out of 467351
+ 483201 string characters out of 5415693
+ 882655 words of memory out of 5000000
+ 53851 multiletter control sequences out of 15000+600000
+ 642819 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,108p,497b,268s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on preparatory.pdf (8 pages, 193824 bytes).
+ 99i,12n,108p,891b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on preparatory.pdf (13 pages, 4149881 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 433 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

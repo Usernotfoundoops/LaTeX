@@ -13,13 +13,24 @@
 \usepackage[super,square]{natbib}
 \usepackage{chemformula}
 \usepackage{sectsty}
+\usepackage[rightcaption]{sidecap}
+\usepackage{caption}
+\captionsetup[figure]{labelfont={bf}}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tocloft}
 
 % Center all section headings
 \sectionfont{\centering}
 \subsectionfont{\centering}
+\subsubsectionfont{\centering}
+\numberwithin{equation}{section}
+%\numberwithin{figure}{section}
 
-% BACKGROUND IMAGE
+
 \begin{document}
+% BACKGROUND IMAGE
+
 %\AddToShipoutPictureBG*{
 %\AtPageLowerLeft{\transparent{0.6}\includegraphics[width=\paperwidth,height=\paperheight]{template-art/Nat/NatTitle_BW.jpg}
 %    }
@@ -36,19 +47,19 @@
 \pagenumbering{roman} %I want roman numerals for the title page and index, but not for the main content. So I set it to roman here, and then switch to arabic later.
 \begin{center}
     \vspace*{\fill}
-     {\large {Experiment Nr. 31}}
+     {\large {ALC-Experiment Nr. B31}}
      \\[0.3cm]
     % Title
     \textcolor[RGB]{90,180,50}{\fontsize{46}{0}\selectfont \textbf{\textsf{Superconductivity}}}
     \\[0.3cm]
-    {\Large \textbf{Date of Submission: \today \\\vspace{0.2cm} Group Nr. M602}}\\
+    {\large Date of Submission: \today \\\vspace{0.2cm} Group Nr. M602}\\
       \vspace*{\fill}
     
       % Authors
     {\Large
     \begin{tabular}{c c}
-        Pravin Mani Kannan & Barathraj Radhakrishnan Subramanian \\
-        Mat. Nr: 23459332 & Mat. Nr: idk
+        Pravin Mani Kannan & \space Barathraj Radhakrishnan Subramanian \\
+        Mat. Nr: 23459332 & \space Mat. Nr: 23403835
     \end{tabular}
     } \\[1cm]
 
@@ -63,12 +74,25 @@
 \end{figure}
 
 
-\newpage{} % INDEX
-\tableofcontents
 
+\newpage{} % INDEX
+{
+\setlength{\cftbeforesecskip}{1.5em}
+\setlength{\cftbeforesubsecskip}{0.5em}
+\tableofcontents
+\clearpage
+}
 \newpage % Start of main content
 
 \pagenumbering{arabic}
+
+% Configure fancy headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+\rhead{\thepage} % Page number in top right
+\lhead{\nouppercase{\leftmark}} % Section name in top left\chead{\nouppercase{\leftmark}}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\headrulewidth}{0.01pt} % Add a line under the header
 
 \section{Introduction}
 In 1902, Lord Kelvin raised a question that would shape low-temperature physics 
@@ -81,7 +105,7 @@ far below anything achievable at the time.
 
 This changed on 10 July 1908, when Kamerlingh Onnes successfully liquefied helium, 
 opening up temperatures below 14\,K for the first time \cite{vanDelft2010}. After 
-early attempts with platinum were hampered by instrumentation limitations, mercury 
+early attempts with platinum were hampered by instrumentation limitations, \textbf{mercury} 
 was selected as the test material due to the high purity achievable by distillation.
 It was later found that purity played no significant role in the onset of superconductivity,
  as the resistance vanished identically in pure mercury and impure amalgams alike, with lead and tin also found to be superconductors shortly after, at transition temperatures near 6.2\,K and 4.2\,K respectively. 
@@ -89,25 +113,32 @@ On 8 April 1911, cooling mercury below 4.2\,K caused its resistance to drop so
 sharply it fell below the detection limit of the apparatus entirely 
 \cite{vanDelft2010, Buckel2004}.
 
-To quantify the effect, Onnes induced persistent currents in closed superconducting 
-rings and monitored them over time. Any finite resistance $R$ would cause 
-exponential decay as
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.38\textwidth]{figures/Onnes_Actutal_Hg.png}
+    \caption{Ultra-cooled mercury showing nearly zero resistance\cite{vanDelft2010}.}
+    \label{fig:RvsT_Hg}
+\end{figure}
 
+To quantify the effect, Onnes induced persistent currents in closed \textbf{superconducting 
+rings} and monitored them over time. Any finite resistance $R$ would cause 
+exponential decay as
 \begin{equation}
     I(t) = I_0 \, e^{-\frac{R}{L}t}
     \label{eq:decay}
 \end{equation}
 
-No such decay was observed, bounding the resistance to at least 14 orders of 
-magnitude below that of copper at 300\,K, a difference comparable to that between 
-a conductor and an insulator \cite{Buckel2004}. In 1933, Meissner and Ochsenfeld 
+%No such decay was observed, bounding the resistance to at least 14 orders of 
+%magnitude below that of copper at 300\,K, a difference comparable to that between 
+%a conductor and an insulator \cite{Buckel2004}.
+In 1933, Meissner and Ochsenfeld 
 further established that superconductors expel magnetic flux entirely from their 
 interior upon cooling below $T_c$, identifying ideal diamagnetism as a second and 
 independent defining property of the superconducting state \cite{Buckel2004}. 
 
 These two phenomena form the experimental basis of this report, in which the 
-superconducting transition of \ch{YBa2Cu3O7} sample
-is characterised through resistive four-point measurements and inductive 
+superconducting transition of \ch{YBa2Cu3O7} and Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ samples
+is characterised through \textbf{resistive four-point measurements} and inductive 
 AC-susceptibility measurements, alongside a demonstration of the 
 Meissner-Ochsenfeld effect through magnetic levitation \cite{experiment}.
 
@@ -119,23 +150,21 @@ Superconductivity is characterised by the complete vanishing of electrical
 resistance below a material-specific critical temperature, $T_c$, at which 
 point a persistent current can flow indefinitely without dissipation. 
 Unlike an ordinary metallic conductor, whose resistance decreases only 
-gradually as temperature is lowered, a superconductor undergoes an abrupt 
-drop to zero resistance at $T_c$ (see Figure 1.1). The mechanisms governing 
+gradually as temperature is lowered, a superconductor undergoes an \textbf{abrupt 
+drop to zero resistance at $T_c$} (see Figure \ref{fig:RvsT_Hg}). The mechanisms governing 
 electrical transport differ fundamentally between metals, semiconductors, 
 and superconductors, and each class exhibits a qualitatively distinct 
 $R(T)$ behaviour. The microscopic basis for superconducting behaviour is 
 provided by BCS theory (Bardeen, Cooper, and Schrieffer, 1957), which 
 describes the formation of Cooper pairs through phonon-mediated 
-electron -- electron attractions, producing a dissipation-free quantum 
+electron - electron attractions, producing a dissipation-free quantum 
 superfluid that carries current without resistance \cite{wiki_super}.
 
 
 \section{Electrical Resistance and Temperature Dependence}
 \subsection{Metals}
-
-
 In a metal, electrical conduction is carried by a gas of free electrons 
-occupying states up to the Fermi energy $E_F$. In the Drude model, a 
+occupying states up to the Fermi energy $E_F$. In the \textbf{Drude model}, a 
 constant electric field accelerates electrons between collisions, and the 
 resulting steady-state current density gives the conductivity \cite{Kittel2005}
 \begin{equation}
@@ -153,34 +182,41 @@ The electrical resistivity follows as
 
 Two scattering mechanisms contribute independently to the total resistivity 
 \cite{Kittel2005}. The first arises from thermally excited lattice vibrations 
-(phonons), which become more pronounced with increasing temperature. The 
+(phonons), which become stronger with increasing temperature. The 
 second comes from static crystal imperfections such as impurities and 
-vacancies, which are temperature-independent. At high 
+vacancies, which are temperature-independent. These two contributions add independently according to \textbf{Matthiessen's rule}
+\begin{equation}
+    \rho(T) = \rho_{\text{L}}(T) + \rho_{\text{i}}
+    \label{eq:matthiessen}
+\end{equation}
+
+
+where $\rho_{\text{i}}$ is the residual resistivity at $T \to 0$, reflecting 
+the purity and structural quality of the sample \cite{Kittel2005}. At high 
 temperatures $\rho_L \propto T$, where $\rho_L$ is the phonon contribution. So resistance increases linearly. As 
 $T \to 0$, phonon scattering freezes out.
-
 \begin{figure}[h]
-    \centering
-    % \includegraphics[width=0.6\textwidth]{figures/metal_RT.png}
-    \caption{Schematic $R(T)$ dependence for a typical metal, showing 
-    approximately linear behaviour at high temperatures and saturation 
-    toward a residual resistance $\rho_i$ at low temperatures. Adapted 
-    from Kittel \cite{Kittel2005}.}
-    \label{fig:metal_RT}
+    \begin{minipage}[c]{0.5\textwidth}
+    \centering \includegraphics[width=0.65\textwidth]{figures/Relative_R_vs_T_Potassium.png}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.5\textwidth}    
+        \caption{Relative resistance of potassium for two impurity concentrations having different residual resistivities $\rho_{\text{i}}$ at T = 0. Adapted from Kittel\cite{Kittel2005}.}
+    \end{minipage}
+    \label{fig:metal_RvsT}
 \end{figure}
 
 
+\newpage
+%-----------------------------------------------------------------
 \subsection{Semiconductors}
-
+%-----------------------------------------------------------------
 
 In a semiconductor, the valence and conduction bands are separated by an 
 energy gap $E_g$ of order 1\,eV \cite{Kittel2005}. At zero temperature no 
 free carriers exist and the material is effectively insulating. As 
-temperature increases, electrons are thermally excited across the gap, 
+temperature increases, electrons are \textbf{thermally excited across the gap}, 
 generating mobile electrons in the conduction band and holes in the valence 
-band, both of which contribute to conduction.
-
-The intrinsic carrier concentration grows exponentially with temperature 
+band, both of which contribute to conduction. The intrinsic carrier concentration grows exponentially with temperature 
 as 
 \begin{equation} n_i \propto T^{3/2}\exp\!\left(\frac{-E_g}{2k_BT}\right) \end{equation}
 and since this exponential factor dominates, the resistivity decreases with increasing temperature 
@@ -191,16 +227,16 @@ and since this exponential factor dominates, the resistivity decreases with incr
     \label{eq:sc_rho}
 \end{equation}
 
-This is the opposite behaviour to metals. A plot of $\ln\rho$ against $1/T$ 
-yields a straight line with slope $E_g/2k_B$, providing a direct way to 
-extract the band gap from resistance measurements \cite{Kittel2005}.
+This is the opposite behaviour to metals. Since \textbf{$\sigma = 1/\rho$}, one 
+equivalently plots $\ln\sigma$ against $1/T$ (refer Fig. \ref{fig:sc_RT}b), which yields a straight line 
+with slope $-E_g/2k_B$, providing a direct way to extract the band gap from 
+conductance measurements \cite{Kittel2005}.
 
 \begin{figure}[h]
     \centering
-    % \includegraphics[width=0.6\textwidth]{figures/semiconductor_RT.png}
-    \caption{Schematic $R(T)$ dependence for an intrinsic semiconductor, 
-    showing exponentially decreasing resistance with increasing temperature. 
-    Adapted from Kittel \cite{Kittel2005}.}
+    \includegraphics[width=0.8\textwidth]{figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png}
+    \caption{(a) Resistivity vs \ temperature for silicon, polyaniline (PANI), and a polyaniline-silicon nanocomposite (PNC). (b) $\ln\sigma$ vs\ $1/T^{1/4}$ showing the linear behaviour characteristic of semiconductors.
+    Adapted from Applied Physics Letters (2013)\cite{semicond_mat}.}
     \label{fig:sc_RT}
 \end{figure}
 
@@ -208,65 +244,61 @@ extract the band gap from resistance measurements \cite{Kittel2005}.
 \subsection{Superconductors and BCS Theory}
 
 
+
 Above $T_c$ a superconductor behaves as a normal metal. Below $T_c$, 
 however, the resistance drops abruptly to zero, which cannot be explained 
-by reduced phonon scattering alone. The Bardeen-Cooper-Schrieffer (BCS) 
-theory (1957) provides the microscopic explanation: a phonon-mediated 
+by reduced phonon scattering alone. The \textbf{Bardeen-Cooper-Schrieffer (BCS)} 
+theory provides the microscopic explanation: a phonon-mediated 
 attractive interaction between electrons near the Fermi surface causes them 
 to form bound pairs known as Cooper pairs \cite{Tinkham1996}. Each Cooper 
 pair consists of two electrons with equal and opposite momenta and opposite 
-spins. The role of phonons in this mechanism was confirmed by the isotope 
-effect, in which $T_c \propto M^{-1/2}$ for different isotopes of the same 
-element \cite{Tinkham1996}.
+spins. For instance, if one-particle orbital is occupied by a spin up electron $\uparrow $ and wavevector \textbf{k} then the other is occupied by a spin down electron $\downarrow$ with wavevector $-\textbf{k}$. If the orbital is vacant then its vice versa. \cite{Kittel2005}.
 
 All Cooper pairs condense into the same macroscopic quantum ground state, 
 described by a single wave function with a well-defined phase 
 \cite{Buckel2004}. This condensate is separated from excited states by an 
 energy gap $\Delta$. A thermal fluctuation cannot scatter the condensate 
-unless it supplies enough energy to break a Cooper pair, which requires 
+\textbf{unless it supplies enough energy to break a Cooper pair}, which requires 
 $k_BT \sim \Delta$. Below $T_c$ this condition is not met, so scattering 
 is suppressed entirely and resistance vanishes \cite{Tinkham1996}.
 
-The BCS theory predicts a universal relation between the zero-temperature 
-gap and the critical temperature \cite{Tinkham1996}
 
 \begin{equation}
     2\Delta(0) = 3.52\, k_B T_c
     \label{eq:bcs_gap_ratio}
 \end{equation}
-
-Experimental values across many materials typically fall in the range 
-$3.0\,k_BT_c$ to $4.5\,k_BT_c$, in good agreement with the BCS prediction 
-\cite{Tinkham1996}.
-
-Near $T_c$ the gap closes continuously following 
-$\Delta(T) \approx 1.74\,\Delta(0)(1-T/T_c)^{1/2}$, characteristic of a 
-second-order phase transition \cite{Tinkham1996}. In practice, real samples 
-such as YBa$_2$Cu$_3$O$_7$ and Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ show a 
-finite transition width $\Delta T_c$ between the onset temperature 
-$T_{c,\mathrm{on}}$ and the zero-resistance temperature $T_{c,0}$, 
-attributed to inhomogeneities in oxygen concentration and crystal quality 
-\cite{experiment}.
-
+\newpage
 \begin{figure}[h]
     \centering
-    % \includegraphics[width=0.6\textwidth]{figures/superconductor_RT.png}
-    \caption{Schematic $R(T)$ for a superconductor showing metallic 
-    behaviour above $T_c$ and a sharp transition to zero resistance below 
-    it. The characteristic temperatures $T_{c,\mathrm{on}}$, 
-    $T_{c,\mathrm{mid}}$, and $T_{c,0}$ and the transition width 
-    $\Delta T_c$ are indicated. Adapted from \cite{experiment}.}
-    \label{fig:sc_Rtransition}
+    \includegraphics[width=0.4\textwidth]{figures/BCS.png}
+    \caption{Temperature dependence of the $\Delta$ \cite{Szab_1994}.}
+    \label{fig:bcs_gap}
 \end{figure}
+
+The BCS theory predicts a universal relation between the zero-temperature 
+gap and the critical temperature. Experimental values across many materials typically fall in the range $3.0\,k_BT_c$ to $4.5\,k_BT_c$, in good agreement with the BCS prediction \cite{Tinkham1996}.
+
 
 
 \section{Magnetic Properties of Superconductors}
 
 \subsection{Ideal Diamagnetism and the Meissner Effect}
 
+\begin{figure}[h]
+    \begin{minipage}[t]{0.6\textwidth}
+        \centering \includegraphics[width=0.99\textwidth]{figures/MeissnerFX.png}
+        \caption{Demonstration of the Meissner-Ochsenfeld effect by dropping a permanent magnet onto a lead bowl. Left: $T>T_c$, right: $T<T_c$. Adapted from Buckel and Kleiner \cite{Buckel2004}.}
+        \label{fig:meissner}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.33\textwidth}    
+        \centering \includegraphics[width=0.61\textwidth]{figures/Diamagnetism.png}
+        \caption{Magnetic field lines around a superconductor showing diamagnetic behavior \cite{Tinkham1996}.}
+        \label{fig:diamagnetism}
+    \end{minipage}
+\end{figure}
 A superconductor cooled below its critical temperature $T_c$ exhibits 
 perfect diamagnetism, spontaneously expelling all internal magnetic flux 
-in what is known as the Meissner-Ochsenfeld effect, first observed by 
+in what is known as the \textbf{Meissner-Ochsenfeld effect}, first observed by 
 Meissner and Ochsenfeld in 1933 \cite{Buckel2004}. The external field 
 does not vanish abruptly at the surface but instead penetrates a thin 
 surface layer over a characteristic length scale known as the London 
@@ -291,23 +323,16 @@ this behaviour is fundamentally different from that of a perfect classical
 conductor, and can only be understood within a quantum mechanical 
 framework \cite{Buckel2004, Tinkham1996}.
 
-\begin{figure}[h]
-    \centering
-    \vspace{5cm}
-    \caption{Exponential decay of the magnetic field $B(x)$ within a 
-    superconductor over the London penetration depth $\lambda_L$.}
-    \label{fig:meissner}
-\end{figure}
 
-\subsection{Type-I vs.\ Type-II Superconductors}
 
-Type-I superconductors are characterised by a single critical field $B_c$, 
+\subsection{Type-I vs. Type-II Superconductors}
+
+Type-I superconductors are characterised by a \textbf{single critical field} $H_c$, 
 below which ideal diamagnetism is maintained and above which 
 superconductivity is abruptly destroyed; elemental superconductors such 
 as mercury and lead fall into this category \cite{Buckel2004, Tinkham1996}. 
-Type-II superconductors instead exhibit two critical fields, $B_{c1}$ and 
-$B_{c2}$, and are distinguished by a Ginzburg-Landau parameter
-
+Type-II superconductors instead exhibit \textbf{two critical fields}, $H_{c1}$ and 
+$H_{c2}$, and are distinguished by a Ginzburg-Landau parameter
 \begin{equation}
     \kappa = \frac{\lambda_L}{\xi_{GL}} > \frac{1}{\sqrt{2}},
     \label{eq:GL_param}
@@ -315,25 +340,27 @@ $B_{c2}$, and are distinguished by a Ginzburg-Landau parameter
 
 where $\xi_{GL}$ is the Ginzburg-Landau coherence length, which gives 
 rise to a negative surface energy between normal and superconducting 
-regions \cite{abrikosov2003, Tinkham1996}. Between $B_{c1}$ and 
-$B_{c2}$, the material enters the Shubnikov phase, in which magnetic 
-flux partially penetrates the sample as discrete flux lines while zero 
+regions \cite{abrikosov2003, Tinkham1996}. Between $H_{c1}$ and 
+$H_{c2}$, the material enters the Shubnikov phase, in which \textbf{magnetic 
+flux partially penetrates the sample as discrete flux lines} while zero 
 electrical resistance is maintained \cite{Buckel2004}. Notably, virtually 
 all superconducting alloys and compounds discovered since the 1960s, 
-including all known high-temperature superconductors where $B_{c2}$ can 
-exceed 100 T, belong to the Type-II class \cite{abrikosov2003, Buckel2004}.
+including all known high-temperature superconductors where $H_{c2}$ can 
+exceed 100~T, belong to the Type-II class \cite{abrikosov2003, Buckel2004}.
 
 \begin{figure}[h]
-    \centering
-    \vspace{5cm}
-    \caption{Schematic phase diagram showing the distinction between 
-    Type-I (single critical field $B_c$) and Type-II superconductors 
-    (two critical fields $B_{c1}$ and $B_{c2}$).}
-    \label{fig:type1vs2}
+    \begin{minipage}[t]{0.4\textwidth}
+        \centering \includegraphics[width=0.8\textwidth]{figures/Type1and2.png}
+        \caption{Comparison of flux penetration behavior of type~I and type~II superconductors with the same thermodynamic critical field $H_c$, where $H_{c2} = \sqrt{2}\,\kappa H_c$\cite{Tinkham1996}}
+        \label{fig:type1vs2}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.5\textwidth}    
+        \centering \includegraphics[width=1\textwidth]{figures/Magnetic-phase-diagram-for-type-I-and-type-2-superconductor-Massachusetts-Institute-of.png}
+        \caption{Magnetic phase diagram of Type-II superconductor shows the existence of \textbf{vortex states or Shubnikov phase}\cite{article67}.}
+        \label{fig:phase_diagram}
+    \end{minipage}
 \end{figure}
-
 \subsection{Flux Quantization and the Abrikosov Vortex Lattice}
-
 In the Shubnikov phase, magnetic flux does not penetrate uniformly but 
 is instead confined to discrete quantised tubes, each carrying exactly 
 one magnetic flux quantum
@@ -351,39 +378,144 @@ supercurrents that decay over the length scale $\lambda_L$ \cite{Tinkham1996}.
 The lower and upper critical fields can be estimated as
 
 \begin{equation}
-    B_{c1} \approx \frac{\Phi_0}{\pi\lambda_L^2}, \qquad
-    B_{c2} \approx \frac{\Phi_0}{\pi\xi_{GL}^2},
+    H_{c1} \approx \frac{\Phi_0}{\pi\lambda_L^2}, \qquad
+    H_{c2} \approx \frac{\Phi_0}{\pi\xi_{GL}^2},
     \label{eq:critical_fields}
 \end{equation}
 
-showing that a smaller coherence length gives rise to a substantially 
-larger upper critical field. Using Ginzburg-Landau theory, Abrikosov 
+showing that a \textbf{smaller coherence length gives rise to a substantially 
+larger upper critical field}. Using Ginzburg-Landau theory, Abrikosov 
 showed that these vortices arrange into a periodic triangular lattice 
 that minimises the free energy of the mixed state, a prediction later 
 confirmed through neutron diffraction and iron-colloid decoration 
 experiments \cite{abrikosov2003, Buckel2004}.
 
 \begin{figure}[h]
-    \centering
-    \vspace{5cm}
-    \caption{Schematic of the Abrikosov vortex lattice in the Shubnikov 
-    phase, showing the triangular arrangement of flux tubes each 
-    carrying $\Phi_0$.}
+    \centering \includegraphics[width=0.7\textwidth]{figures/vortex.png}
+    \caption{Vortex lattice imaged via electron microscopy using iron-colloid decoration in a Pb + 6.3\,at.\% In alloy at 1.2\,K [Magnification: 8300$\times$]\cite{Buckel2004}}
     \label{fig:abrikosov}
 \end{figure}
 
 \section{Magnetic Susceptibility and Magnetization}
-    \subsection{Diamagnetic, Paramagnetic, and Ferromagnetic Materials}
-    \subsection{Magnetization Curves of Superconductors}
-    \subsection{Critical Field, Temperature, and Current Density}
 
-\section{Experimental Methods}
-    \subsection{Four-Point Probe Measurements}
-    \subsection{Inductive AC-Susceptibility Measurements}
-    \subsection{Deep-Stick Setup and Lock-In Technique}
+In a magnetic field, the magnetisation M of a system is the magnetic moment per unit volume. This is related to the applied magnetic field H linearly by the dimensionless factor magnetic susceptibility, i.e $M = \chi H$\cite{Simon:1581455}\footnotemark \footnotetext{H: Magnetic Field Strength (A/m); B: Magnetic Flux Density (T)}.
+The magnetisation and magnetic field relate to each other as:
+\begin{equation}
+    B = \mu_0 (H + M)
+\end{equation}
+For small susceptibilities, this can be written as
+\begin{equation}
+    M = \frac{\chi B}{\mu_0}.
+\end{equation}
 
-\section{Conclusion}
+Here, a \textbf{paramagnet} is a substance which has positive susceptibility ($\chi > 0$) and their magnetisation aligns with the applied magnetic field. A \textbf{diamagnet} has negative susceptibility ($\chi < 0$) and its magnetisation is in the opposite direction as the applied field.\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.40\textwidth]{figures/magnetisation curves - para, dia, ferro.png}
+    \caption{Magnetization curves showing the $M$ vs $H$ relationships for paramagnetic, diamagnetic, and ferromagnetic materials.\cite{LAU2022301}}
+    \label{fig:magnetisation_curves}
+\end{figure} There are no unpaired electrons and the net magnetic moment is zero\cite{Simon:1581455}. Type I and II superconductors both exhibit perfect diamagnetism since the magnetic fields are expelled from the interior, this results in a magnetic susceptibility of -1. \textbf{Ferromagnetic} materials are similar to paramagnetic materials, but its magnetisation M is non-zero even without an applied magnetic field and is much stronger. It can also be called spontaneous magnetism\cite{Simon:1581455}. The susceptibilities of these different materials are visualised in \textbf{Figure~\ref{fig:magnetisation_curves}}.
 
+\subsection{Critical Field, Temperature, and Current Density}
+
+Type-I superconductors have a single critical magnetic field $H_{c}$ point beyond which beyond which superconductivity is lost entirely. Type-II superconductors are characterised by two critical fields, $H_{c1}$ and $H_{c2}$. Below $H_{c1}$, the material exhibits perfect diamagnetism as in the Meissner state. 
+Between the \textbf{two critical fields}, magnetic flux penetrates the material in the form of 
+quantised vortices, forming the mixed (Shubnikov) phase, where perfect diamagnetism is 
+no longer maintained\cite{Chaddah2003}. Above $H_{c2}$, superconductivity breaks down entirely. In addition 
+to the critical fields, superconducting behaviour is restricted to \textbf{temperatures below $T_c$}, 
+since thermal energy above this point is sufficient to destroy the Cooper pairs responsible 
+for the condensate. A \textbf{critical current density} $J_c$ also plays an important role: when the 
+applied current exceeds $J_c$, the Lorentz force on the Abrikosov vortices overcomes the 
+pinning forces from lattice defects, setting the vortices in motion\cite{Chaddah2003}. Moving vortices induce 
+an electric field parallel to $\mathbf{J}$, leading to a finite \textit{flux-flow resistance} 
+and energy dissipation even within the mixed state\cite{Chaddah2003}. Perfect conductivity is therefore only 
+sustained as long as the current remains below $J_c$.
+
+\section[Experimental Methods]{Experimental Methods\protect\footnotemark}
+\footnotetext{The whole experimental methods section is based on the experiment manual provided by the university\cite{experiment}}
+\subsection{Four-Point Probe Measurements}
+\begin{figure}[h]
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering \includegraphics[width=1\textwidth]{figures/Expt Part/Four-point resistance measurement setup.png}
+        \caption{Four point probe measurement setup for measuring the resistance of the given sample.\cite{experiment}}
+        \label{fig:4point}
+    \end{minipage}\hfill
+    \begin{minipage}[t]{0.48\textwidth}    
+        \centering \includegraphics[width=1\textwidth]{figures/Expt Part/Bi....O8 sample preparation.png}
+        \caption{Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ sample preparation for four-point probe measurements.\cite{experiment}}
+        \label{fig:BiSampPrep}
+    \end{minipage}
+\end{figure}
+For this experiment, a small sample of the Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ is removed and fixed on to a sapphire substrate. Four gold contacts are fixed on to the substrate for which thermal evaporation is used here. \textbf{Thin aluminium wires} are used for conducting electricity between the gold contacts and the prepared sample. A constant current is passed through the sample and the voltage between the contacts $U_{4p}$ is obtained\cite{experiment}. Using a voltmeter of a high internal resistance, one can measure only the small voltage drop between the contacts. Using \textbf{Ohm's law}, the resistance can be calculated due to its proportionality with the voltage. If a 2-point method is used, the voltages at the contacts is also measured and results in errors\cite{experiment}.
+
+The voltage and resistance are then measured at different temperatures by both cooling and heating the sample to produce a hysteresis curve.
+
+\subsection{Inductive AC-Susceptibility Measurements}
+These measurements enables one to find the \textbf{critical temperature $T_c$} and the width of the phase transition $\Delta T_c$. A mutual inductance bridge with three induction coils is used for this measurement\cite{experiment}. Two secondary coils are used here which are identical to each other and have equal windings. The first one (reference coil) only experiences the field from the primary coil. Besides this field, the other secondary coil (sample coil) also experiences the field from the superconducting sample. The secondary coils are contained inside the primary coil as shown in Figure \ref{fig:solenoid}. 
+
+\begin{figure}[h]
+    \centering \includegraphics[width=0.47\textwidth]{figures/Expt Part/Inductive measurement - primary and secondary coil setup.png}
+    \caption{Mutual inductance solenoid setup using primary and secondary coils.\cite{experiment}}
+    \label{fig:solenoid}
+\end{figure}
+
+
+The application of an alternating current through the primary coil causes an alternating magnetic field inside it. Due to this alternating behaviour, the complex susceptibility and the time dependent magnetic field have to be considered. The external magnetic field follows the form:
+
+\begin{equation}
+H_a = H_0 + h_{AC} \cos(\omega t)
+\end{equation}
+
+The induced voltage is given by the equation:
+
+\begin{equation}
+U = \pi r^2 \mu_0 \left( h_{AC} \omega \sin(\omega t) - \frac{dM}{dt} \right)
+\end{equation}
+
+where $M$ is the magnetic momentum, $r$ is the radius of the secondary sample coil, $\sin(\omega t)$ represents the induction signal of the alternating field, and $h_{AC}$ is the amplitude of the alternating field
+
+The magnetic momentum can be written as a Fourier series since it is periodic:
+\begin{equation}
+M = \langle M \rangle_T + h_{AC} \sum_{n=1}^{\infty} \left( \chi_n' \cos(n\omega t) + \chi_n'' \sin(n\omega t) \right)
+\end{equation}
+
+where $\chi_n'$ and $\chi_n''$ are the \textbf{real and imaginary components} of the magnetic susceptibility. They are written as:
+\begin{equation}
+\chi_n' = \frac{\omega}{\pi h_{AC}} \int_{0}^{T} M \cos(n\omega t) \, dt
+\end{equation}
+
+\begin{equation}
+\chi_n'' = \frac{\omega}{\pi h_{AC}} \int_{0}^{T} M \sin(n\omega t) \, dt
+\end{equation}
+
+Plugging in these terms into the induced voltage equation yields:
+\begin{equation}
+U = U_0 \left[ \sin(\omega t) + \sum_{n=1}^{\infty} n \left( \chi_n' \sin(n\omega t) - \chi_n'' \cos(n\omega t) \right) \right]
+\end{equation}
+
+Using a lock-in amplifier, the $n=1$ term is isolated from the magnetic momentum. Here, the $\sin$ term dominates over the whole induction signal so it has to be removed. This is done so by combining the reference and sample coils in series with opposite windings.
+\begin{equation}
+U_1^* = U_0 \left( \chi_1' \sin(\omega t) - \chi_1'' \cos(\omega t) \right)
+\end{equation}
+
+The real and imaginary parts of the susceptibility refer to the \textbf{inductive and resistive components}, respectively. The area enclosed by the hysteresis curve of the magnetic flux density is given as:
+\begin{equation}
+A_H = \oint \mu_0 H_\alpha \, dB = \int_{0}^{T} \mu_0 \left( H_0 + h_{AC} \cos(\omega t) \right) \frac{dB}{dt} \, dt
+\end{equation}
+
+The area relates to $\chi''$ as: $A_H = \pi (\mu_0 h_{AC})^2 \chi''$. For normally conducting samples, both components of susceptibility tend to zero, so $U_1^* \approx 0$. For a superconducting sample in the Meissner phase, $\chi' \approx -1$ and $\chi'' \approx 0$, therefore the hysteresis curve is not seen. For type II superconductors, $\chi'$ changes while $\chi'' \neq 0$\cite{experiment}.
+\subsubsection{Deep-Stick Technique}
+
+\begin{figure}[h]
+    \centering \includegraphics[width=0.3\textwidth]{figures/Expt Part/dipstick illustration (DUT here is device under test).png}
+    \caption{Illustration of the dipstick technique for handling samples at cryogenic temperatures\cite{badenhorst2008cryogenic}.}
+    \label{fig:dipstick}
+\end{figure}
+The deep stick/dipstick is used when handling samples at low-temperature environments to place them in a cryostat. The sample is placed in a chamber at the end of the dipstick and it can help insert samples in a \textbf{liquid helium bath}. Dipsticks can be combined with temperature control devices and diodes for measurement. It allows for the study of the electrical and thermal properties at cryogenic temperatures\cite{badenhorst2008cryogenic}. 
+\subsubsection{Lock-In Technique}
+Lock-in amplifiers are useful to extract signals in extremely noisy environments, even extremely weak signals million times lower in amplitude than the noise. The input is multiplied by a \textbf{reference signal} which is either provided externally or generated by the lock-in amplifier itself. An \textbf{adjustable low-pass} filter is applied to this result, isolating the signal at the required frequency . Frequencies higher than the reference are filtered out\cite{zurich2016lockin}. 
+\newpage
+\addcontentsline{toc}{section}{\protect\numberline{}References}
 \bibliographystyle{IEEEtranN}
 \bibliography{bibliography}
+\nocite{ai_note}
 \end{document}
