@@ -1,0 +1,236 @@
+\documentclass[11pt, a4paper]{article}
+
+%------------------------------------------------------------------------------
+% PACKAGES
+%------------------------------------------------------------------------------
+\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+%------------------------------------------------------------------------------
+% FARBEN
+%------------------------------------------------------------------------------
+\definecolor{headingcolor}{RGB}{0,0,0}
+\definecolor{linkcolor}{RGB}{26, 90, 150}
+\definecolor{rulecolor}{RGB}{180,180,180}
+
+%------------------------------------------------------------------------------
+% HYPERREF
+%------------------------------------------------------------------------------
+\hypersetup{
+    colorlinks = true,
+    urlcolor   = linkcolor,
+    linkcolor  = linkcolor,
+    pdftitle   = {Lebenslauf -- Pravin Mani Kannan},
+    pdfauthor  = {Pravin Mani Kannan},
+}
+
+%------------------------------------------------------------------------------
+% ABSCHNITTSFORMATIERUNG
+%------------------------------------------------------------------------------
+\titleformat{\section}
+  {\large\bfseries\color{headingcolor}}
+  {}
+  {0em}
+  {}
+  [\vspace{-17pt}\textcolor{rulecolor}{\rule{\linewidth}{0.5pt}}]
+
+\titlespacing{\section}{0pt}{4pt}{0pt}
+
+%------------------------------------------------------------------------------
+% EIGENE BEFEHLE
+%------------------------------------------------------------------------------
+
+% Eintrag mit Titel links und Datum/Ort rechts
+\newcommand{\cventry}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small #3
+  \end{tabularx}%
+  \ifx&#2&\else\vspace{-\parskip}\vspace{0pt}\par\noindent\textit{#2}\fi
+  \vspace{1pt}
+}
+
+% Projekteintrag (fett + kursiver Tag, keine rechte Spalte)
+\newcommand{\project}[2]{%
+  \noindent\textbf{#1} \textit{[#2]}%
+  \vspace{-1pt}
+}
+
+% Projekteintrag mit Datum rechts
+\newcommand{\projectdate}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} \textit{[#2]} & \small #3
+  \end{tabularx}%
+  \vspace{1pt}
+}
+
+% Aufzählungsliste mit engem Abstand
+\newenvironment{cvlist}{%
+  \begin{itemize}[leftmargin=1.2em, itemsep=-1pt, parsep=1pt, topsep=-1pt]
+}{%
+  \end{itemize}
+}
+
+% Kenntniszeile: fettes Label + normaler Text
+\newcommand{\skillrow}[2]{%
+  \noindent\textbf{#1:} #2\par\vspace{0pt}
+}
+
+%----------------------------------------------------------
+% PERSÖNLICHE DATEN: zweispaltige Label/Wert-Tabelle
+%
+% \infolabelwidth  -- Breite der Label-Spalte (justiertbar)
+% \inforowgap      -- Abstand zwischen den Zeilen (justiertbar)
+%----------------------------------------------------------
+\newlength{\infolabelwidth}
+\setlength{\infolabelwidth}{4.5cm}   % <-- Labelbreite anpassen
+
+\newlength{\inforowgap}
+\setlength{\inforowgap}{-2pt}         % <-- Zeilenabstand anpassen
+
+\newcommand{\inforow}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}p{\infolabelwidth} X@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\par\vspace{\inforowgap}
+}
+
+%------------------------------------------------------------------------------
+% DOKUMENT
+%------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+%==============================================================================
+% KOPFZEILE
+%==============================================================================
+\begin{center}
+  {\Huge\bfseries PRAVIN MANI KANNAN}\\[3pt]
+  \faEnvelope\ \href{mailto:pravin.mani@fau.de}{E-Mail}
+  \quad\textbar\quad
+  \faLinkedin\ \href{http://www.linkedin.com/in/mpravin21/}{LinkedIn}
+  \quad\textbar\quad
+  \faGithub\ \href{https://github.com/Usernotfoundoops}{GitHub}
+\end{center}
+
+\vspace{4pt}
+
+%==============================================================================
+% PERSÖNLICHE DATEN
+%==============================================================================
+\section{PERSÖNLICHE DATEN}
+\vspace{2pt}   % <-- Abstand zwischen Trennlinie und erster Zeile
+
+\inforow{Geburtsdatum:}{21.08.2001}
+\inforow{Geburtsort:}{Chennai, Indien}
+\inforow{Staatsangehörigkeit:}{Indisch}
+\inforow{Adresse:}{Mozartstr.\ 22, 91052 Erlangen}
+\inforow{Telefon:}{+49 1522 1554845}
+\inforow{E-Mail:}{\href{mailto:pravin.mani@fau.de}{pravin.mani@fau.de}}
+\inforow{Sprachen:}{Deutsch (A2), Englisch (C1), Tamilisch (Muttersprache), Spanisch (A1)}
+
+%==================ABSTANDSHALTER (zwischen Abschnitten)==================
+\vspace{7pt}   % <-- Abstand zwischen Abschnitten; frei anpassbar
+%=========================================================================
+
+%==============================================================================
+% AUSBILDUNG
+%==============================================================================
+\section{AUSBILDUNG}
+
+\cventry{Master of Science - Physik}
+        {Friedrich-Alexander-Universität Erlangen-Nürnberg}
+        {Apr. 2024 - heute, \hfill Erlangen, Deutschland}
+
+\vspace{0pt}
+
+\cventry{Master of Science - Kernphysik}
+        {Universität Madras}
+        {Jul. 2021 - Aug. 2022, \hfill Chennai, Indien}
+
+\vspace{0pt}
+
+\cventry{Bachelor of Science - Physik}
+        {Universität Madras - Gesamtnote: 8{,}96}
+        {Jun. 2018 -- Apr. 2021, \hfill Chennai, Indien}
+
+%==================ABSTANDSHALTER========================================
+\vspace{7pt}
+%=========================================================================
+
+%==============================================================================
+% PHYSIKPROJEKTE
+%==============================================================================
+\section{PHYSIKPROJEKTE}
+
+%--- Projekt 1 ---------------------------------------------------------------
+\project{Ising-Modell mit Cython}{Eigenständiges Projekt}
+\begin{cvlist}
+  \item Implementierung eines 2D-Ising-Monte-Carlo-Verfahrens mit C-typisierten
+        Speicheransichten und Schwarz-Weiß-Metropolis-Updates in Cython.
+  \item Periodische Randbedingungen und vektorfreie innere Schleifen für eine
+        erhebliche Beschleunigung gegenüber reinem Python.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Projekt 2 ---------------------------------------------------------------
+\project{In Bearbeitung -- Ising-Phasendiagramm mit verlässlicher Unsicherheit mittels JAX, FLAX}{Eigenständiges Projekt}
+\begin{cvlist}
+  \item Entwicklung eines FLAX-basierten CNN, das konforme Vorhersagen anwendet,
+        um kalibrierte Phasenkarten mit Konfidenzdarstellungen zu erzeugen.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Projekt 3 ---------------------------------------------------------------
+\projectdate{Vergleichende Analyse adiabatischer Fehlerschranken in Quantensystemen anhand eines modifizierten Landau-Zener-Modells}
+            {Benotet: 1{,}5}
+            {Dez. 2025 -- Feb. 2026}
+\vspace{0pt}
+\noindent\textit{FAU Erlangen-Nürnberg, bei Prof.\ Michael J.\ Hartmann, Leonhard Richter und Marco Wiedmann}
+\begin{cvlist}
+  \item Konstruktion eines Dreiniveau-Quantensystems und Beobachtung der simulierten
+        Fehler bei kontinuierlicher und adiabatischer Entwicklung entlang der Eigenniveaus.
+  \item Verwendung einer quantitativen Fehler-Oberschranke zur Verifikation der simulierten
+        Fehler und Überprüfung der Schranke selbst nach Jansen, Ruskai und Seiler.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Projekt 4 ---------------------------------------------------------------
+\project{In Bearbeitung -- Erweiterung auf diskrete Zeitentwicklung durch unitäre Operatoren und Charakterisierung des adiabatischen Fehlerverhaltens}{Eigenständiges Projekt}
+\begin{cvlist}
+  \item Konstruktion der unitären Operatorentwicklung mit QuTiP.
+  \item Laufende Überprüfung der Fehlerschranken.
+\end{cvlist}
+
+%==================ABSTANDSHALTER========================================
+\vspace{7pt}
+%=========================================================================
+
+%==============================================================================
+% KENNTNISSE
+%==============================================================================
+\newcommand{\skillgap}{-4pt}   % <-- Abstand zwischen Kenntniszeilen; weniger negativ = mehr Abstand
+\section{KENNTNISSE}
+\vspace{0pt}   % <-- Abstand zwischen Trennlinie und erster Kenntniszeile
+\skillrow{Programmiersprachen}{Python, C++ (Grundkenntnisse), Lisp}\vspace{\skillgap}
+\skillrow{Machine-Learning-Bibliotheken}{TensorFlow, JAX, FLAX, OPTAX}\vspace{\skillgap}
+\skillrow{Quantensystem-Bibliotheken}{QuTiP, QiSkit (Grundkenntnisse)}\vspace{\skillgap}
+\skillrow{Entwicklerwerkzeuge}{PyCharm, Emacs, Git, Jupyter, \LaTeX}
+
+\end{document}

@@ -1,0 +1,231 @@
+\documentclass[11pt, a4paper]{article}
+
+%------------------------------------------------------------------------------
+% PACKAGES
+%------------------------------------------------------------------------------
+\usepackage[a4paper, top=1.2cm, bottom=1.2cm, left=1.4cm, right=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}           % Scalable fonts
+\usepackage{microtype}         % Microtypography improvements
+\usepackage{parskip}           % No paragraph indent, spacing between paragraphs
+\usepackage{enumitem}          % List customisation
+\usepackage{titlesec}          % Section heading customisation
+\usepackage{xcolor}            % Colors
+\usepackage{tabularx}          % Flexible tables
+\usepackage{array}             % Extended column definitions
+\usepackage{booktabs}          % Better horizontal rules
+\usepackage{hyperref}          % Clickable links
+\usepackage{fontawesome5}      % Icons (email, phone, GitHub, LinkedIn)
+
+%------------------------------------------------------------------------------
+% COLORS
+%------------------------------------------------------------------------------
+\definecolor{headingcolor}{RGB}{0,0,0}
+\definecolor{linkcolor}{RGB}{26, 90, 150}
+\definecolor{rulecolor}{RGB}{180,180,180}
+
+%------------------------------------------------------------------------------
+% HYPERREF SETUP
+%------------------------------------------------------------------------------
+\hypersetup{
+    colorlinks = true,
+    urlcolor   = linkcolor,
+    linkcolor  = linkcolor,
+    pdftitle   = {Pravin Mani Kannan — Resume},
+    pdfauthor  = {Pravin Mani Kannan},
+}
+
+%------------------------------------------------------------------------------
+% SECTION FORMATTING
+%------------------------------------------------------------------------------
+\titleformat{\section}
+  {\large\bfseries\color{headingcolor}}  % format
+  {}                                      % label
+  {0em}                                   % sep
+  {}                                      % before-code
+  [\vspace{-17pt}\textcolor{rulecolor}{\rule{\linewidth}{0.5pt}}]%distance beetween top heading and separator
+
+\titlespacing{\section}{0pt}{4pt}{0pt}
+
+%------------------------------------------------------------------------------
+% CUSTOM COMMANDS
+%------------------------------------------------------------------------------
+
+% Entry with title on left and date/location on right
+% #1 = bold title, #2 = italic subtitle, #3 = right-side text (date + location)
+\newcommand{\cventry}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small #3
+  \end{tabularx}%
+  \ifx&#2&\else\vspace{-\parskip}\vspace{0pt}\par\noindent\textit{#2}\fi
+  \vspace{1pt}%distance between each univbersity entry
+}
+
+% Project entry (bold title + italic tag, no right column)
+\newcommand{\project}[2]{%space between heading and points
+  \noindent\textbf{#1} \textit{[#2]}%
+  \vspace{-1pt}
+}
+
+% Project entry with date on right
+\newcommand{\projectdate}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} \textit{[#2]} & \small #3
+  \end{tabularx}%
+  \vspace{1pt}
+}
+
+% Bullet list with tight spacing
+\newenvironment{cvlist}{%
+  \begin{itemize}[leftmargin=1.2em, itemsep=0pt, parsep=0pt, topsep=0pt]
+}{%
+  \end{itemize}
+}
+
+% Skill row: bold label + normal text
+\newcommand{\skillrow}[2]{%
+  \noindent\textbf{#1:} #2\par\vspace{0pt}
+}
+
+%------------------------------------------------------------------------------
+% DOCUMENT
+%------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}   % no page numbers
+
+%==============================================================================
+% HEADER
+%==============================================================================
+\begin{center}
+  {\Huge\bfseries PRAVIN MANI KANNAN}\\[3pt]
+  \small
+  Mozartstr.\ 22, 91052 Erlangen
+  \quad\textbar\quad
+  \faPhone\ +49 1522 1554845
+  \quad\textbar\quad
+  \faEnvelope\ \href{pravin.mani@fau.de}{Email}
+  \quad\textbar\quad
+  \faLinkedin\ \href{http://www.linkedin.com/in/mpravin21/}{LinkedIn}
+  \quad\textbar\quad
+  \faGithub\ \href{https://github.com/Usernotfoundoops}{GitHub}
+\end{center}
+
+\vspace{4pt}
+%==============================================================================
+% EDUCATION
+%==============================================================================
+\section{EDUCATION}
+
+\cventry{Master of Science in Physics}
+        {Friedrich-Alexander-Universität Erlangen-Nürnberg}
+        {Apr 2024 - Present \hfill Erlangen, Germany}
+
+\vspace{0pt}
+
+\cventry{Master of Science in Nuclear Physics}
+        {University of Madras - CGPA: 8.96}
+        {Jul 2021 - Aug 2022 \hfill Chennai, India}
+
+\vspace{0pt}
+
+\cventry{Bachelor of Science in Physics}
+        {University of Madras - CGPA: 8.96}
+        {Jun 2018 - Apr 2021 \hfill Chennai, India}
+%\begin{cvlist}
+%\end{cvlist}
+
+%==============================================================================
+% KEY COURSES
+%==============================================================================
+%\section{Key Courses}
+%
+%Quantum Mechanics, \textbf{Open Quantum Systems}, \textbf{Quantum Information Processing},
+%Machine Learning, Elementary Group Theory, Hamiltonian Formulation,
+%Semiconductor Detectors, Scintillation Detectors, and Error Analysis and Fitting Techniques.
+%==================DIVIDER SPACE========================================
+\vspace{7pt}
+%==================DIVIDER SPACE========================================
+%==============================================================================
+% PHYSICS PROJECTS
+%==============================================================================
+\section{PHYSICS PROJECTS}
+
+%--- Project 1 ---------------------------------------------------------------
+\project{Ising Model with Cython}{Independent Project}
+\begin{cvlist}
+  \item Implemented a 2D Ising Monte Carlo with C-typed memory views and
+        white-black Metropolis updates in Cython.
+  \item Periodic boundary conditions and vector-free inner loops for
+        substantial speedup over pure Python.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Project 2 ---------------------------------------------------------------
+\project{In Progress -- Ising Phase Diagram with Reliable Uncertainty using JAX, FLAX}{Independent Project}
+\begin{cvlist}
+  \item Building a FLAX-based CNN that applies conformal prediction to produce
+        calibrated phase maps with confidence maps.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Project 3 ---------------------------------------------------------------
+\projectdate{Comparative Analysis of Adiabatic Error Bounds in Quantum Systems Through a Modified Landau-Zener Model}
+            {Graded: 1.5}
+            {Dec 2025 - Feb 2026}
+
+\noindent\textit{FAU Erlangen-Nürnberg, under Prof.\ Michael J.\ Hartmann, Leonhard Richter, and Marco Wiedmann}
+\begin{cvlist}
+  \item Constructed a three-level quantum system and observed the simulated errors from
+        continuous and adiabatic evolution through their eigenlevels.
+  \item Used a quantitative error upper bound to verify the simulated errors and test
+        the bound itself from `Jansen, Ruskai, and Seiler'.
+\end{cvlist}
+
+\vspace{0pt}
+
+%--- Project 4 ---------------------------------------------------------------
+\project{In Progress -- Extending the Above Project to Discrete Evolution through Unitary Operators and Characterizing the Adiabatic Error Behavior}{Independent Project}
+\begin{cvlist}
+  \item Constructed the unitary operator evolution through QuTiP.
+  \item Currently testing out on the error bounds.
+\end{cvlist}
+%==================DIVIDER SPACE========================================
+\vspace{7pt}
+%==================DIVIDER SPACE========================================
+
+
+%==============================================================================
+% EXPERIMENTS
+%==============================================================================
+\section{EXPERIMENTS}
+
+\textbf{Determination of back scattering and absorption factor of Gamma and Beta rays using GM Counter}\\
+\textbf{Gamma Ray Spectrometer: Characteristics}\\
+\textit{University of Madras, under Prof.\ Dr.\ A.\ Stephen}
+
+\vspace{2pt}
+
+\textbf{Fabry-Perot Interferometer: Multiple Beam Interference}\\
+\textbf{Fiber Optics -- Determination of Numerical Aperture, Estimation of Loss, Audio transmission}\\
+\textit{University of Madras, under Assistant Prof.\ Dr.\ J.\ Senthil Selvan}
+%==================DIVIDER SPACE========================================
+\vspace{7pt}
+%==================DIVIDER SPACE========================================
+%==============================================================================
+% SKILLS
+%==============================================================================
+\newcommand{\skillgap}{-4pt}
+\section{SKILLS}
+\vspace{-0pt}
+\skillrow{Language}{German (A2), English (C1), Tamil (Native), Spanish (A1)}\vspace{\skillgap}
+\skillrow{Programming Languages}{Python, C++ (Beginner), Lisp}\vspace{\skillgap}
+\skillrow{Machine Learning Libraries}{TensorFlow, JAX, FLAX, OPTAX}\vspace{\skillgap}
+\skillrow{Quantum System Libraries}{QuTiP, QiSkit (Beginner)}\vspace{\skillgap}
+\skillrow{Developer Tools / Framework}{PyCharm, Emacs, Git, Jupyter, \LaTeX}
+
+\end{document}
