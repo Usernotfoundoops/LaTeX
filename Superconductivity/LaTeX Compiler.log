@@ -1,0 +1,983 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'pdflatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size11.clo)) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/eso-pic/eso-pic.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx))) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (/usr/local/texlive/2026/texmf-dist/tex/latex/transparent/transparent.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/transparent/transparent-nometadata.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/auxhook/auxhook.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/helvet.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/natbib/natbib.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))) (/usr/local/texlive/2026/texmf-dist/tex/latex/chemformula/chemformula.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex))) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex))) (/usr/local/texlive/2026/texmf-dist/tex/latex/xfrac/xfrac.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/units/nicefrac.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty)) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex)) (/usr/local/texlive/2026/texmf-dist/tex/latex/sectsty/sectsty.sty
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/sidecap/sidecap.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/caption/caption3.sty)) (/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def) (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty) (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (/usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty) (/usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty)
+Only pages 8-13 will be output.
+No auxiliary output files.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty) (./preparatory.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg)) (/usr/local/texlive/2026/texmf-dist/tex/latex/ragged2e/ragged2e.sty)
+\providecommand\hyper@newdestlabel[2]{}
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <46> not available
+(Font)              size <24.88> substituted on input line 57.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <46> not available
+(Font)              size <24.88> substituted on input line 57.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1phv.fd) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd)
+No file preparatory.toc.
+
+Package natbib Warning: Citation `vanDelft2010' on page 1 undefined on input line 106.
+
+
+Package natbib Warning: Citation `vanDelft2010' on page 1 undefined on input line 111.
+
+
+Package natbib Warning: Citation `vanDelft2010' on page 1 undefined on input line 118.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 1 undefined on input line 118.
+
+
+Package natbib Warning: Citation `vanDelft2010' on page 1 undefined on input line 123.
+
+
+Package natbib Warning: Citation `vanDelft2010' on page 1 undefined on input line 123.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 1 undefined on input line 141.
+
+
+Package natbib Warning: Citation `experiment' on page 1 undefined on input line 147.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+LaTeX Warning: Reference `fig:RvsT_Hg' on page 2 undefined on input line 158.
+
+
+Package natbib Warning: Citation `wiki_super' on page 2 undefined on input line 165.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 2 undefined on input line 173.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 2 undefined on input line 188.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 2 undefined on input line 199.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 2 undefined on input line 207.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 2 undefined on input line 207.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 3 undefined on input line 219.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 3 undefined on input line 227.
+
+
+LaTeX Warning: Reference `fig:sc_RT' on page 3 undefined on input line 235.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 3 undefined on input line 237.
+
+
+Package natbib Warning: Citation `semicond_mat' on page 3 undefined on input line 243.
+
+
+Package natbib Warning: Citation `semicond_mat' on page 3 undefined on input line 243.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 3 undefined on input line 257.
+
+
+Package natbib Warning: Citation `Kittel2005' on page 3 undefined on input line 259.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 3 undefined on input line 263.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 3 undefined on input line 267.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `Szab_1994' on page 4 undefined on input line 278.
+
+
+Package natbib Warning: Citation `Szab_1994' on page 4 undefined on input line 278.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 4 undefined on input line 283.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 4 undefined on input line 294.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 4 undefined on input line 294.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 4 undefined on input line 299.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 4 undefined on input line 299.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 4 undefined on input line 306.
+
+
+Overfull \hbox (4.78447pt too wide) in paragraph at lines 303--310
+\OT1/cmr/m/n/10.95 spon-ta-neously ex-pelling all in-ter-nal mag-netic flux in what is known as the \OT1/cmr/bx/n/10.95 Meissner-Ochsenfeld
+
+Package natbib Warning: Citation `Buckel2004' on page 4 undefined on input line 328.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 4 undefined on input line 328.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 4 undefined on input line 337.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 4 undefined on input line 337.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `abrikosov2003' on page 5 undefined on input line 347.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 5 undefined on input line 347.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 350.
+
+
+Package natbib Warning: Citation `abrikosov2003' on page 5 undefined on input line 353.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 353.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 5 undefined on input line 358.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 5 undefined on input line 358.
+
+
+Package natbib Warning: Citation `article67' on page 5 undefined on input line 363.
+
+
+Package natbib Warning: Citation `article67' on page 5 undefined on input line 363.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 378.
+
+
+Package natbib Warning: Citation `Tinkham1996' on page 5 undefined on input line 381.
+
+
+Package natbib Warning: Citation `abrikosov2003' on page 5 undefined on input line 395.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 395.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 399.
+
+
+Package natbib Warning: Citation `Buckel2004' on page 5 undefined on input line 399.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Simon:1581455' on page 5 undefined on input line 405.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `LAU2022301' on page 6 undefined on input line 418.
+
+
+Package natbib Warning: Citation `LAU2022301' on page 6 undefined on input line 418.
+
+
+Package natbib Warning: Citation `Simon:1581455' on page 6 undefined on input line 420.
+
+
+Package natbib Warning: Citation `Simon:1581455' on page 6 undefined on input line 420.
+
+
+LaTeX Warning: Reference `fig:magnetisation_curves' on page 6 undefined on input line 420.
+
+
+Package natbib Warning: Citation `Chaddah2003' on page 6 undefined on input line 427.
+
+
+Package natbib Warning: Citation `Chaddah2003' on page 6 undefined on input line 432.
+
+
+Package natbib Warning: Citation `Chaddah2003' on page 6 undefined on input line 434.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 438.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 443.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 443.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 448.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 448.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 452.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 452.
+
+
+Package natbib Warning: Citation `experiment' on page 7 undefined on input line 457.
+
+
+LaTeX Warning: Reference `fig:solenoid' on page 7 undefined on input line 457.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+Package natbib Warning: Citation `experiment' on page 8 undefined on input line 461.
+
+
+Package natbib Warning: Citation `experiment' on page 8 undefined on input line 461.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/Expt Part/Inductive measurement - primary and secondary coil setup.png>]
+
+Package natbib Warning: Citation `experiment' on page 9 undefined on input line 509.
+
+
+Package natbib Warning: Citation `badenhorst2008cryogenic' on page 9 undefined on input line 514.
+
+
+Package natbib Warning: Citation `badenhorst2008cryogenic' on page 9 undefined on input line 514.
+
+
+Package natbib Warning: Citation `badenhorst2008cryogenic' on page 9 undefined on input line 517.
+
+
+Package natbib Warning: Citation `zurich2016lockin' on page 9 undefined on input line 519.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9 <./figures/Expt Part/dipstick illustration (DUT here is device under test).png>]
+
+Package natbib Warning: Citation `tinkham2004' on page 10 undefined on input line 568.
+
+
+Package natbib Warning: Citation `cengel2014' on page 10 undefined on input line 573.
+
+
+Package natbib Warning: Citation `junod1990' on page 10 undefined on input line 585.
+
+
+LaTeX Warning: Reference `fig:plot_hysteresis' on page 10 undefined on input line 601.
+
+
+Package natbib Warning: Citation `poole2007' on page 10 undefined on input line 615.
+
+
+Package natbib Warning: Citation `bevington2003' on page 10 undefined on input line 622.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10 </home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png>]
+
+Package natbib Warning: Citation `bevington2003' on page 11 undefined on input line 637.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11 </home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png>]
+
+LaTeX Warning: Reference `tab:critical_temps' on page 12 undefined on input line 712.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12 </home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png>]
+
+Package natbib Warning: Citation `wu1987' on page 13 undefined on input line 738.
+
+
+LaTeX Warning: Reference `fig:plot_cooling' on page 13 undefined on input line 744.
+
+
+Package natbib Warning: Citation `vanderBeek1992' on page 13 undefined on input line 745.
+
+
+Package natbib Warning: Citation `aslamazov1968' on page 13 undefined on input line 758.
+
+
+Package natbib Warning: Citation `larkin2005' on page 13 undefined on input line 762.
+
+
+Package natbib Warning: Citation `iye1988' on page 13 undefined on input line 765.
+
+
+Package natbib Warning: Citation `tinkham2004' on page 13 undefined on input line 766.
+
+
+LaTeX Warning: Reference `tab:critical_temps' on page 13 undefined on input line 768.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13] (./preparatory.bbl
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+<argument> ...tom: {7}\chemformula_minus: \delta }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing { inserted.
+<to be read again> 
+                   \color_group_end: 
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing } inserted.
+<inserted text> 
+                }
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+./preparatory.bbl:108: Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...n single-crystal \ch{YBa2Cu3O_{7-\delta}}
+                                                  ,'' \emph{Japanese Journal...
+)
+
+Package natbib Warning: Citation `ai_note' undefined on input line 775.
+
+
+Package natbib Warning: There were undefined citations.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 21.12pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on preparatory.pdf (6 pages, 740210 bytes).
+SyncTeX written on preparatory.synctex.gz.
+Transcript written on preparatory.log.
+Latexmk: Getting log file 'preparatory.log'
+Latexmk: Examining 'preparatory.fls'
+Latexmk: Examining 'preparatory.log'
+Latexmk: Missing input file 'preparatory.toc' message in .log file:
+  No file preparatory.toc.
+Latexmk: Found input bbl file 'preparatory.bbl'
+Latexmk: Log file says output to 'preparatory.pdf'
+Latexmk: Foreign .bbl file, 'preparatory.bbl',
+appears **not** to be associated with .aux file from this run.
+Latexmk: Summary of warnings from last run of *latex:
+  Latex failed to resolve 8 reference(s)
+  Latex failed to resolve 86 citation(s)
+Latexmk: Errors, so I did not complete making targets
+Latexmk: ====Problematic refs and citations with line #s in .tex file:
+  Citation `vanDelft2010' on page 1 undefined on input line 106
+  Citation `vanDelft2010' on page 1 undefined on input line 111
+  Citation `vanDelft2010' on page 1 undefined on input line 118
+  Citation `Buckel2004' on page 1 undefined on input line 118
+  Citation `vanDelft2010' on page 1 undefined on input line 123
+  Citation `vanDelft2010' on page 1 undefined on input line 123
+  Citation `Buckel2004' on page 1 undefined on input line 141
+ And 87 more --- see log file 'preparatory.log'
+Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+Collected error summary (may duplicate other messages):
+  pdflatex: Command for 'pdflatex' gave return code 1
+      Refer to 'preparatory.log' and/or above output for details
+

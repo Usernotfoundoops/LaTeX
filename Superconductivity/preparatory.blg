@@ -15,46 +15,48 @@ Database file #1: bibliography.bib
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--missing publisher in cengel2014
 
 Done.
-You've used 16 entries,
+You've used 24 entries,
             4855 wiz_defined-function locations,
-            1056 strings with 11227 characters,
-and the built_in function-call counts, 11267 in all, are:
-= -- 984
-> -- 303
-< -- 62
-+ -- 149
-- -- 71
-* -- 609
-:= -- 1844
-add.period$ -- 32
-call.type$ -- 16
-change.case$ -- 35
-chr.to.int$ -- 133
-cite$ -- 17
-duplicate$ -- 787
-empty$ -- 865
-format.name$ -- 99
-if$ -- 2485
+            1109 strings with 12674 characters,
+and the built_in function-call counts, 18250 in all, are:
+= -- 1555
+> -- 550
+< -- 116
++ -- 266
+- -- 125
+* -- 1020
+:= -- 2872
+add.period$ -- 47
+call.type$ -- 24
+change.case$ -- 49
+chr.to.int$ -- 267
+cite$ -- 26
+duplicate$ -- 1248
+empty$ -- 1384
+format.name$ -- 177
+if$ -- 4067
 int.to.chr$ -- 1
-int.to.str$ -- 17
-missing$ -- 131
-newline$ -- 86
-num.names$ -- 47
-pop$ -- 374
+int.to.str$ -- 25
+missing$ -- 199
+newline$ -- 112
+num.names$ -- 71
+pop$ -- 573
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 24
 quote$ -- 2
-skip$ -- 809
+skip$ -- 1307
 stack$ -- 0
-substring$ -- 285
-swap$ -- 511
-text.length$ -- 11
+substring$ -- 575
+swap$ -- 845
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 220
-warning$ -- 0
-while$ -- 48
+type$ -- 316
+warning$ -- 1
+while$ -- 82
 width$ -- 0
-write$ -- 211
+write$ -- 298
+(There was 1 warning)

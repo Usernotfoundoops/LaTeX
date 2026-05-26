@@ -1,8 +1,8 @@
-PWD /home/pravin/Documents/LaTeX/Superconductivity
+PWD /home/pravin/Documents/VS Code/LaTeX/Superconductivity
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/pravin/Documents/LaTeX/Superconductivity/preparatory.tex
+INPUT /home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex
 OUTPUT preparatory.log
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -244,6 +244,12 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 INPUT ./preparatory.aux
 INPUT ./preparatory.aux
 INPUT preparatory.aux
@@ -415,6 +421,72 @@ INPUT ./figures/Expt Part/dipstick illustration (DUT here is device under test).
 INPUT ./figures/Expt Part/dipstick illustration (DUT here is device under test).png
 INPUT ./figures/Expt Part/dipstick illustration (DUT here is device under test).png
 INPUT ./figures/Expt Part/dipstick illustration (DUT here is device under test).png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png
+INPUT /home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png
+INPUT ./Plots/Sus1-HeatingandCooling.png
+INPUT ./Plots/Sus1-HeatingandCooling.png
+INPUT ./Plots/Sus1-HeatingandCooling.png
+INPUT ./Plots/Sus1-HeatingandCooling.png
+INPUT ./Plots/Sus1-HeatingandCooling.png
+INPUT ./Plots/Sus2-HeatingandCooling.png
+INPUT ./Plots/Sus2-HeatingandCooling.png
+INPUT ./Plots/Sus2-HeatingandCooling.png
+INPUT ./Plots/Sus2-HeatingandCooling.png
+INPUT ./Plots/Sus2-HeatingandCooling.png
+INPUT ./Plots/Sus1-Cooling.png
+INPUT ./Plots/Sus1-Cooling.png
+INPUT ./Plots/Sus1-Cooling.png
+INPUT ./Plots/Sus1-Cooling.png
+INPUT ./Plots/Sus1-Cooling.png
+INPUT ./Plots/Sus1-Heating.png
+INPUT ./Plots/Sus1-Heating.png
+INPUT ./Plots/Sus1-Heating.png
+INPUT ./Plots/Sus1-Heating.png
+INPUT ./Plots/Sus1-Heating.png
+INPUT ./Plots/Sus2-Cooling.png
+INPUT ./Plots/Sus2-Cooling.png
+INPUT ./Plots/Sus2-Cooling.png
+INPUT ./Plots/Sus2-Cooling.png
+INPUT ./Plots/Sus2-Cooling.png
+INPUT ./Plots/Sus2-Heating.png
+INPUT ./Plots/Sus2-Heating.png
+INPUT ./Plots/Sus2-Heating.png
+INPUT ./Plots/Sus2-Heating.png
+INPUT ./Plots/Sus2-Heating.png
+INPUT ./Photos lab day/opposite poles.jpeg
+INPUT ./Photos lab day/opposite poles.jpeg
+INPUT ./Photos lab day/opposite poles.jpeg
+INPUT ./Photos lab day/opposite poles.jpeg
+INPUT ./Photos lab day/opposite poles.jpeg
+INPUT ./Photos lab day/circular track.jpg
+INPUT ./Photos lab day/circular track.jpg
+INPUT ./Photos lab day/circular track.jpg
+INPUT ./Photos lab day/circular track.jpg
+INPUT ./Photos lab day/circular track.jpg
+INPUT ./Photos lab day/vortex pinning.jpeg
+INPUT ./Photos lab day/vortex pinning.jpeg
+INPUT ./Photos lab day/vortex pinning.jpeg
+INPUT ./Photos lab day/vortex pinning.jpeg
+INPUT ./Photos lab day/vortex pinning.jpeg
+INPUT ./Photos lab day/levitation.jpeg
+INPUT ./Photos lab day/levitation.jpeg
+INPUT ./Photos lab day/levitation.jpeg
+INPUT ./Photos lab day/levitation.jpeg
+INPUT ./Photos lab day/levitation.jpeg
 INPUT ./preparatory.bbl
 INPUT ./preparatory.bbl
 INPUT preparatory.bbl
@@ -427,12 +499,16 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.p
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb

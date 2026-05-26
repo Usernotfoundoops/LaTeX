@@ -15,4 +15,10 @@
 \contentsline {subsection}{\numberline {6.2}Inductive AC-Susceptibility Measurements}{7}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Deep-Stick Technique}{9}{subsubsection.6.2.1}%
 \contentsline {subsubsection}{\numberline {6.2.2}Lock-In Technique}{9}{subsubsection.6.2.2}%
-\contentsline {section}{\numberline {}References}{10}{subsubsection.6.2.2}%
+\contentsline {section}{\numberline {7}Analysis of Experimental Methods}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Normal-State Behaviour and Hysteresis}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Determination of Critical Temperatures}{11}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Superconducting Fluctuations at the Phase Transition}{13}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.3}Inductive Measurements of the Susceptibility}{13}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Levitation Experiments: Meissner Effect and Vortex Pinning}{16}{section.8}%
+\contentsline {section}{\numberline {}References}{18}{figure.caption.27}%
