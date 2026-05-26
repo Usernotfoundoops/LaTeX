@@ -250,6 +250,8 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty
 INPUT ./preparatory.aux
 INPUT ./preparatory.aux
 INPUT preparatory.aux

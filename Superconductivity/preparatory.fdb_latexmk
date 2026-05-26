@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex preparatory"] 1779827346.01208 "preparatory.aux" "preparatory.bbl" "preparatory" 1779828236.31444 0
+["bibtex preparatory"] 1779828902.04831 "preparatory.aux" "preparatory.bbl" "preparatory" 1779828907.67153 0
   "./bibliography.bib" 1779806165.88922 9696 9625abfda7280d4fbdf568f463bcf1c1 ""
   "/usr/local/texlive/2026/texmf-dist/bibtex/bst/ieeetran/IEEEtranN.bst" 1440712899 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "preparatory.aux" 1779828236.0085 22498 81a74719aeac696c2e21cf93a362a142 "pdflatex"
+  "preparatory.aux" 1779828907.35522 22498 bae1e653ffe8213f9ad5514b80416d8b "pdflatex"
   (generated)
   "preparatory.bbl"
   "preparatory.blg"
   (rewritten before read)
-["pdflatex"] 1779828230.31984 "/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex" "preparatory.pdf" "preparatory" 1779828236.31461 0
+["pdflatex"] 1779828902.23194 "/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex" "preparatory.pdf" "preparatory" 1779828907.6717 0
   "/home/pravin/Documents/VS Code/ALC/Super Conductivity/Cooling-1.png" 1779554636.72466 200599 4b0ec2346eb511b8113d18a53b51ab97 ""
   "/home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating-1.png" 1779554524.7068 152643 ec8deb855224e690198d7b12407678b0 ""
   "/home/pravin/Documents/VS Code/ALC/Super Conductivity/Heating_and_Cooling-1.png" 1779554434.61112 125845 1b465dcb2d185aa13421758beeeee34a ""
-  "/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex" 1779828230.11354 51703 c174a5de0a0601790d7ffc076610e4d7 ""
+  "/home/pravin/Documents/VS Code/LaTeX/Superconductivity/preparatory.tex" 1779828896.23606 51786 de54e15474559253ce5d1b8cb8f04e2e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm" 1136768653 2240 eb56c13537f4d8a0bd3fafc25572b1bd ""
@@ -201,6 +201,7 @@
   "/usr/local/texlive/2026/texmf-dist/tex/latex/selectp/selectp.sty" 1252800673 9678 cd3124079f79d534fd51a5f1c188971f ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/sidecap/sidecap.sty" 1674593116 10323 0cd251d037275df22520869153e09765 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/tocloft/tocloft.sty" 1578692495 36103 3e78d14f0f4b1a30560fea5e04de805d ""
+  "/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty" 1761946296 15651 9d7c62df82cb29a555c00550babfe364 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty" 1761946296 33142 efe8f4750fc02524935e7423b4bdef69 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/transparent/transparent-nometadata.sty" 1750707701 4218 953818299bf47dea89e603d2b8a390d8 ""
   "/usr/local/texlive/2026/texmf-dist/tex/latex/transparent/transparent.sty" 1750707701 1797 4ef4500488e0ea48fd76f41e2a351a2e ""
@@ -237,11 +238,11 @@
   "figures/a-Resistivity-vs-temperature-for-the-silicon-PANI-PNCs-and-b-lnr-and-T-A1-4-curve.png" 1778514777.47401 29637 9013be1c2438f487f1b18af6b18fdefa ""
   "figures/magnetisation curves - para, dia, ferro.png" 1778501602.90465 45938 56bf15e07de68f9df57143ff0dee1d17 ""
   "figures/vortex.png" 1778528457.7346 1221414 bd42ea1a68c73b3c288d6e2149ed91b1 ""
-  "preparatory.aux" 1779828236.0085 22498 81a74719aeac696c2e21cf93a362a142 "pdflatex"
-  "preparatory.bbl" 1779827346.11104 7708 7283441849146bda5dd7bea7f404105d "bibtex preparatory"
-  "preparatory.out" 1779828236.0095 5468 26aa3694e9ba6413f2069d35b9143527 "pdflatex"
-  "preparatory.tex" 1779828230.11354 51703 c174a5de0a0601790d7ffc076610e4d7 ""
-  "preparatory.toc" 1779828236.01086 2368 eb0bfd51c742182cb5d1130a0f280bf4 "pdflatex"
+  "preparatory.aux" 1779828907.35522 22498 bae1e653ffe8213f9ad5514b80416d8b "pdflatex"
+  "preparatory.bbl" 1779828902.22721 7708 7283441849146bda5dd7bea7f404105d "bibtex preparatory"
+  "preparatory.out" 1779828907.35622 5468 26aa3694e9ba6413f2069d35b9143527 "pdflatex"
+  "preparatory.tex" 1779828896.23606 51786 de54e15474559253ce5d1b8cb8f04e2e ""
+  "preparatory.toc" 1779828907.35678 2368 eb0bfd51c742182cb5d1130a0f280bf4 "pdflatex"
   "template-art/FAUWortmarkeBlau.pdf" 1676265128 1987 4651861cce1b5eb74de0af734805d175 ""
   "template-art/Nat/NatKennung.pdf" 1676265128 8709 7fa5c32bd1d745ced7ddb09ed624cc9b ""
   (generated)
