@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.2)  26 MAY 2026 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.2)  26 MAY 2026 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1090,18 +1090,18 @@ Overfull \hbox (16.91774pt too wide) in paragraph at lines 747--753
 <Plots/Sus1-HeatingandCooling.png, id=414, 509.2626pt x 321.6015pt>
 File: Plots/Sus1-HeatingandCooling.png Graphic file (type png)
 <use Plots/Sus1-HeatingandCooling.png>
-Package pdftex.def Info: Plots/Sus1-HeatingandCooling.png  used on input line 762.
+Package pdftex.def Info: Plots/Sus1-HeatingandCooling.png  used on input line 761.
 (pdftex.def)             Requested size: 212.89546pt x 134.44357pt.
 <Plots/Sus2-HeatingandCooling.png, id=415, 502.5174pt x 321.6015pt>
 File: Plots/Sus2-HeatingandCooling.png Graphic file (type png)
 <use Plots/Sus2-HeatingandCooling.png>
-Package pdftex.def Info: Plots/Sus2-HeatingandCooling.png  used on input line 766.
+Package pdftex.def Info: Plots/Sus2-HeatingandCooling.png  used on input line 764.
 (pdftex.def)             Requested size: 212.89546pt x 136.24454pt.
 <Plots/Sus1-Cooling.png, id=416, 509.2626pt x 321.6015pt>
 File: Plots/Sus1-Cooling.png Graphic file (type png)
 <use Plots/Sus1-Cooling.png>
 Package pdftex.def Info: Plots/Sus1-Cooling.png  used on input line 773.
-(pdftex.def)             Requested size: 339.72592pt x 214.5395pt.
+(pdftex.def)             Requested size: 335.19873pt x 211.68349pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1110,16 +1110,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13 <./Plots/Sus1-HeatingandCooling.png> <./Plots/Sus2-HeatingandCooling.png>]
-<Plots/Sus1-Heating.png, id=428, 509.2626pt x 321.6015pt>
+<Plots/Sus1-Heating.png, id=429, 509.2626pt x 321.6015pt>
 File: Plots/Sus1-Heating.png Graphic file (type png)
 <use Plots/Sus1-Heating.png>
 Package pdftex.def Info: Plots/Sus1-Heating.png  used on input line 779.
-(pdftex.def)             Requested size: 339.72592pt x 214.5395pt.
+(pdftex.def)             Requested size: 335.19873pt x 211.68349pt.
 
 Overfull \hbox (2.24776pt too wide) in paragraph at lines 787--799
  [][] 
  []
 
+<Plots/Sus2-Cooling.png, id=433, 507.5763pt x 321.6015pt>
+File: Plots/Sus2-Cooling.png Graphic file (type png)
+<use Plots/Sus2-Cooling.png>
+Package pdftex.def Info: Plots/Sus2-Cooling.png  used on input line 808.
+(pdftex.def)             Requested size: 339.72592pt x 215.25597pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1128,15 +1133,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14 <./Plots/Sus1-Cooling.png> <./Plots/Sus1-Heating.png>]
-<Plots/Sus2-Cooling.png, id=441, 507.5763pt x 321.6015pt>
-File: Plots/Sus2-Cooling.png Graphic file (type png)
-<use Plots/Sus2-Cooling.png>
-Package pdftex.def Info: Plots/Sus2-Cooling.png  used on input line 808.
-(pdftex.def)             Requested size: 339.72592pt x 215.25597pt.
-<Plots/Sus2-Heating.png, id=442, 502.5174pt x 321.6015pt>
+<Plots/Sus2-Heating.png, id=443, 502.5174pt x 321.6015pt>
 File: Plots/Sus2-Heating.png Graphic file (type png)
 <use Plots/Sus2-Heating.png>
-Package pdftex.def Info: Plots/Sus2-Heating.png  used on input line 814.
+Package pdftex.def Info: Plots/Sus2-Heating.png  used on input line 815.
 (pdftex.def)             Requested size: 339.72592pt x 217.42496pt.
 
 
@@ -1150,12 +1150,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15 <./Plots/Sus2-Cooling.png> <./Plots/Sus2-Heating.png>]
-<Photos lab day/20260513_170648.jpg, id=460, 4095.3pt x 2304.61pt>
+<Photos lab day/20260513_170648.jpg, id=461, 4095.3pt x 2304.61pt>
 File: Photos lab day/20260513_170648.jpg Graphic file (type jpg)
 <use Photos lab day/20260513_170648.jpg>
 Package pdftex.def Info: Photos lab day/20260513_170648.jpg  used on input line 860.
 (pdftex.def)             Requested size: 317.07614pt x 178.4296pt.
-<Photos lab day/opposite poles.jpeg, id=461, 1606.0pt x 903.375pt>
+<Photos lab day/opposite poles.jpeg, id=462, 1606.0pt x 903.375pt>
 File: Photos lab day/opposite poles.jpeg Graphic file (type jpg)
 <use Photos lab day/opposite poles.jpeg>
 Package pdftex.def Info: Photos lab day/opposite poles.jpeg  used on input line 867.
@@ -1169,17 +1169,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16 <./Photos lab day/20260513_170648.jpg>]
-<Photos lab day/circular track.jpg, id=471, 1084.05pt x 1317.92375pt>
+<Photos lab day/circular track.jpg, id=472, 1084.05pt x 1317.92375pt>
 File: Photos lab day/circular track.jpg Graphic file (type jpg)
 <use Photos lab day/circular track.jpg>
 Package pdftex.def Info: Photos lab day/circular track.jpg  used on input line 874.
 (pdftex.def)             Requested size: 199.30698pt x 242.30383pt.
-<Photos lab day/vortex pinning.jpeg, id=472, 1606.0pt x 903.375pt>
+<Photos lab day/vortex pinning.jpeg, id=473, 1606.0pt x 903.375pt>
 File: Photos lab day/vortex pinning.jpeg Graphic file (type jpg)
 <use Photos lab day/vortex pinning.jpeg>
 Package pdftex.def Info: Photos lab day/vortex pinning.jpeg  used on input line 883.
 (pdftex.def)             Requested size: 224.21689pt x 126.11324pt.
-<Photos lab day/levitation.jpeg, id=473, 1606.0pt x 903.375pt>
+<Photos lab day/levitation.jpeg, id=474, 1606.0pt x 903.375pt>
 File: Photos lab day/levitation.jpeg Graphic file (type jpg)
 <use Photos lab day/levitation.jpeg>
 Package pdftex.def Info: Photos lab day/levitation.jpeg  used on input line 888.
@@ -1233,18 +1233,18 @@ Package rerunfilecheck Info: File `preparatory.out' has not changed.
 (rerunfilecheck)             Checksum: 26AA3694E9BA6413F2069D35B9143527;5468.
  ) 
 Here is how much of TeX's memory you used:
- 25715 strings out of 467351
- 493304 string characters out of 5415693
- 900410 words of memory out of 5000000
- 54228 multiletter control sequences out of 15000+600000
+ 25714 strings out of 467351
+ 493286 string characters out of 5415693
+ 900375 words of memory out of 5000000
+ 54227 multiletter control sequences out of 15000+600000
  642987 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,108p,901b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,108p,901b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on preparatory.pdf (22 pages, 9069787 bytes).
+Output written on preparatory.pdf (22 pages, 9072189 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 485 compressed objects within 5 object streams
+ 622 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
  133 named destinations out of 1000 (max. 500000)
  363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -756,27 +756,27 @@ intrinsic critical fluctuations and the sample inhomogeneity.
 \subsection{Inductive Measurements of the Susceptibility}
 In this task, the real ($\chi'$) and imaginary ($\chi''$) parts of the magnetic susceptibility were measured by adjusting the phase angle. They refer to the inductive and resistive component, respectively \cite{experiment}. As given in equation \ref{sus_imandre}, setting $\omega t = n\pi$ yields $\chi''$ and $\omega t = n\pi/2$ gives $\chi'$. 
 
-
 \begin{figure}[H]
     \begin{minipage}[t]{0.47\textwidth}
         \centering \includegraphics[width=1\textwidth]{Plots/Sus1-HeatingandCooling.png}
-        \label{fig:combo_sus_real}
     \end{minipage}\hfill
     \begin{minipage}[t]{0.47\textwidth}    
         \centering \includegraphics[width=1\textwidth]{Plots/Sus2-HeatingandCooling.png}
-        \label{fig:combo_sus_im}
     \end{minipage}
     \caption{Combined cooling and heating curve for \textbf{(left)} the real part of susceptibility and \textbf{(right)} the imaginary part of susceptibility.}
+    \label{fig:combo_sus_real}
 \end{figure}
-
-\begin{figure}[h]
-    \centering \includegraphics[width=0.75\textwidth]{Plots/Sus1-Cooling.png}
+\fancyfoot[L]{\footnotesize The cooling curve in Fig.~\ref{fig:combo_sus_real} 
+is shifted down by $-0.035$ for display purposes only and to align the two curves 
+below $T_{c,0}$. This offset is not applied in any quantitative analysis.}
+\begin{figure}[H]
+    \centering \includegraphics[width=0.74\textwidth]{Plots/Sus1-Cooling.png}
     \caption{Cooling curve for the real part of susceptibility}
     \label{fig:cool_sus_real}
 \end{figure}
 
-\begin{figure}[h]
-    \centering \includegraphics[width=0.75\textwidth]{Plots/Sus1-Heating.png}
+\begin{figure}[H]
+    \centering \includegraphics[width=0.74\textwidth]{Plots/Sus1-Heating.png}
     \caption{Heating curve for the real part of susceptibility}
     \label{fig:heat_sus_real}
 \end{figure}
@@ -803,19 +803,19 @@ Uncertainties follow the Eq.~\ref{eq:uncertainty}}
 Similar to the resistance measurements, the dipstick was lowered and raised for cooling and heating respectively. Manual adjustments were done to adjust the rate of change of temperature. Once the curves for the real part have been obtained, the angle is adjusted on the lock-in amplifier and the process is repeated to find the imaginary part.  
 
 The intersection points of the fitted lines to the curve provide the critical and onset temperatures. The critical temperatures of the cooling and heating curve were found to be $93.27\,\text{K}$ and $93.32\,\text{K}$, and this is close to the accepted value of $93\,\text{K}$ for the \ch{YBa2Cu3O7} sample.\cite{PhysRevLett.58.908}
-
+\fancyfoot[L]{}
 \begin{figure}[H]
     \centering \includegraphics[width=0.75\textwidth]{Plots/Sus2-Cooling.png}
     \caption{Cooling curve for the imaginary part of susceptibility}
     \label{fig:cool_sus_im}
 \end{figure}
 
+
 \begin{figure}[H]
     \centering \includegraphics[width=0.75\textwidth]{Plots/Sus2-Heating.png}
     \caption{Heating curve for the imaginary part of susceptibility}
     \label{fig:heat_sus_im}
 \end{figure}
-
 \textbf{Figure~\ref{fig:cool_sus_im}} and \textbf{Figure~\ref{fig:heat_sus_im}} were plotted using a Gaussian fit with the form \begin{equation}y=a\cdot\exp\left(-\frac{(x-x_0)^2}{2\sigma^2}\right) + C\end{equation} Here, a is the amplitude with a negative value. $x_0$ is the mean and $\sigma$ is the standard deviation. The values of the Gaussian parameters are provided in Table \ref{tab:im_sus_gaussian}.
 
 \begin{table}[h!]
