@@ -710,7 +710,7 @@ the uncertainties $\sigma_{b_1}$, $\sigma_{b_2}$, $\sigma_{m_1}$, and $\sigma_{m
 \caption{Critical temperatures extracted via linear extrapolation. $T_{c,\mathrm{onset}}$ is the transition onset, $T_{c,0}$ 
 the zero-resistance temperature, and $\Delta T_c$ the transition width. 
 Uncertainties propagated via Eq.~\ref{eq:uncertainty}}
-\label{tab:critical_temps}
+\label{tab:critical_temps_RvsT}
 \end{table}
 
 The $T_{c,0}$ values agree within uncertainties between cycles 
@@ -729,7 +729,7 @@ superconducting sequentially, broadening and distorting the R-T
 profile~\cite{vanderBeek1992}.
 
 %-------------------------------------------------------------------
-\subsubsection{Superconducting Fluctuations at the Phase Transition}
+\subsection{Superconducting Fluctuations at the Phase Transition}
 %-------------------------------------------------------------------
 
 Below $T_{c,0}$, long-range phase coherence is fully established and hole-like 
@@ -746,7 +746,7 @@ paraconductivity~\cite{aslamazov1968,larkin2005}.
 length~\cite{junod1990}, both of which amplify phase fluctuations relative 
 to conventional BCS superconductors~\cite{Tinkham1996}. The observed 
 transition widths $\Delta T_c \approx 17$--$19\,\text{K}$ 
-(Table~\ref{tab:critical_temps}) therefore reflect a combination of 
+(Table~\ref{tab:critical_temps_RvsT}) therefore reflect a combination of 
 intrinsic critical fluctuations and the sample inhomogeneity.
 
 %BARATH PART--------------------------------------------------------
@@ -767,8 +767,6 @@ In this task, the real ($\chi'$) and imaginary ($\chi''$) parts of the magnetic 
     \caption{Combined cooling and heating curve for \textbf{(left)} the real part of susceptibility and \textbf{(right)} the imaginary part of susceptibility.}
 \end{figure}
 
-Similar to the resistance measurements, the dipstick was lowered and raised for cooling and heating respectively. Manual adjustments were done to adjust the rate of change of temperature. Once the curves for the real part have been obtained, the angle is adjusted on the lock-in amplifier and the process is repeated to find the imaginary part.  
-
 \begin{figure}[h]
     \centering \includegraphics[width=0.75\textwidth]{Plots/Sus1-Cooling.png}
     \caption{Cooling curve for the real part of susceptibility}
@@ -781,9 +779,28 @@ Similar to the resistance measurements, the dipstick was lowered and raised for 
     \label{fig:heat_sus_real}
 \end{figure}
 
-The intersection points of the fitted lines to the curve provide the critical and onset temperatures. The critical temperatures of the cooling and heating curve were found to be $93.27\,\text{K}$ and $93.32\,\text{K}$, and this is close to the accepted value of $93\,\text{K}$ for the \ch{YBa2Cu3O7} sample.\cite{PhysRevLett.58.908}   
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lc|c|c}
+    \toprule[1.2pt]
+    Cycle 
+        & $T_{c,\mathrm{onset}} \pm \Delta{T_{c,\mathrm{onset}}}$ (K) 
+        & $T_{c,0} \pm \Delta{T_{c,0}}$ (K) 
+        & $\Delta T_c = \left(T_{c,\mathrm{onset}} - T_{c,0}\right) \pm \thinspace\Delta{\Delta{T_c}}$ (K) \\
+    \midrule
+    Cooling & $97.57449 \pm 2.50226$ & $93.26896 \pm 1.86160$ & $4.30553 \pm 3.11879$ \\
+    Heating & $96.12292 \pm 1.84172$ & $93.31768 \pm 0.95250$ & $2.80525 \pm 2.07345$ \\
+    \bottomrule[1.5pt]
+\end{tabular}
+\caption{Linear extrapolation to obtain critical temperatures for the real part of susceptibility.
+Uncertainties follow the Eq.~\ref{eq:uncertainty}}
+\label{tab:critical_temps_Sus1vsT}
+\end{table}
 
+Similar to the resistance measurements, the dipstick was lowered and raised for cooling and heating respectively. Manual adjustments were done to adjust the rate of change of temperature. Once the curves for the real part have been obtained, the angle is adjusted on the lock-in amplifier and the process is repeated to find the imaginary part.  
 
+The intersection points of the fitted lines to the curve provide the critical and onset temperatures. The critical temperatures of the cooling and heating curve were found to be $93.27\,\text{K}$ and $93.32\,\text{K}$, and this is close to the accepted value of $93\,\text{K}$ for the \ch{YBa2Cu3O7} sample.\cite{PhysRevLett.58.908}
 
 \begin{figure}[H]
     \centering \includegraphics[width=0.75\textwidth]{Plots/Sus2-Cooling.png}
@@ -797,7 +814,7 @@ The intersection points of the fitted lines to the curve provide the critical an
     \label{fig:heat_sus_im}
 \end{figure}
 
-\textbf{Figure~\ref{fig:cool_sus_im}} and \textbf{Figure~\ref{fig:heat_sus_im}} were plotted using a Gaussian fit with the form \begin{equation}y=a\cdot\exp(-\frac{(x-x_0)^2}{2\sigma^2}) + C\end{equation} Here, a is the amplitude with a negative value. $x_0$ is the mean and $\sigma$ is the standard deviation. The values of the Gaussian parameters are provided in Table \ref{tab:im_sus_gaussian}.
+\textbf{Figure~\ref{fig:cool_sus_im}} and \textbf{Figure~\ref{fig:heat_sus_im}} were plotted using a Gaussian fit with the form \begin{equation}y=a\cdot\exp\left(-\frac{(x-x_0)^2}{2\sigma^2}\right) + C\end{equation} Here, a is the amplitude with a negative value. $x_0$ is the mean and $\sigma$ is the standard deviation. The values of the Gaussian parameters are provided in Table \ref{tab:im_sus_gaussian}.
 
 \begin{table}[h!]
     \centering
@@ -818,7 +835,7 @@ The intersection points of the fitted lines to the curve provide the critical an
 
 
 
-The critical temperatures $T_c,_0$ obtained through the heating and cooling curves were 99.0771 $\pm$ 0.01429 $\,\text{K}$ and 92.7845 $\pm$ 0.005539 $\,\text{K}$. The maximum of the imaginary magnetic susceptibility also occurs at this temperature, corresponding to the mean ($x_0$).   
+The critical temperatures $T_{\text{c,0}}$ obtained through the heating and cooling curves were 99.0771 $\pm$ 0.01429 $\,\text{K}$ and 92.7845 $\pm$ 0.005539 $\,\text{K}$. The maximum of the imaginary magnetic susceptibility also occurs at this temperature, corresponding to the mean ($x_0$).
 As discussed in section \ref{sec:ac_susceptibility}, the area of the hysterisis curve is:
 
 \begin{equation}
@@ -836,48 +853,56 @@ $\chi''$ is proportional to $W_V$ if $h_{AC}$ is kept constant. \cite{experiment
 \section{Levitation Experiments: Meissner Effect and Vortex Pinning}
 In this experiment, a type II superconductor was used to perform a demonstration of the Meissner effect and the Shubnikov phase, along with vortex pinning. 
 
-Graphite was initially used to get an idea of natural diamagnetism and we could observe the weak repulsion exhibited when it was placed on a magnetic track.
-
-Ceramic samples were used for this experiment and they were covered in cotton and aluminium foil for better insulation. The sample was then placed in a pool of liquid nitrogen (with a boiling point of 77\,K) till it reached a temperature below the critical temperature. The expulsion of the magnetic flux out the sample i.e. the Meissner effect was observed below the critical temperature.  
-
+Graphite was initially used to get an idea of natural diamagnetism and we could observe the weak repulsion exhibited when it was placed on a magnetic track which can be seen in Figure~\ref{fig:graphite}.
 \begin{figure}[h]
-    \centering \includegraphics[width=0.7\textwidth]{Photos lab day/opposite poles.jpeg}
-    \caption{Track with opposite poles}
-    \label{fig:opposite poles}
+    \centering \includegraphics[width=0.7\textwidth]{Photos lab day/20260513_170648.jpg}
+    \caption{Graphite on a magnetic track showing weak repulsion due to its diamagnetic properties.}
+    \label{fig:graphite}
 \end{figure}
 
-As shown in \textbf{Figure~\ref{fig:opposite poles}}, the sample was placed in the ring track where like poles of the magnets are opposite to each other. The sample levitates between the two rings and is stable when revolving around in the track. As the sample heats up, it loses the superconductivity and collapses when the temperature exceeds the critical temperature.
+Ceramic samples were used for this experiment and they were covered in cotton and aluminium foil for better insulation. The sample was then placed in a pool of liquid nitrogen (with a boiling point of 77\,K) till it reached a low temperature below the critical temperature. The expulsion of the magnetic flux out the sample i.e. the Meissner effect was observed below the critical temperature.
+\begin{figure}[h]
+    \centering \includegraphics[width=0.7\textwidth]{Photos lab day/opposite poles.jpeg}
+    \caption{Superconductor levitating stably in the weak-field pocket between two permanent magnet rings oriented with same poles facing each other. The repelling field geometry creates a local field minimum in the gap, allowing the Meissner effect to trap and stabilize the sample.}
+    \label{fig:opposite poles}
+\end{figure}
+As shown in \textbf{Figure~\ref{fig:ring track}}, the sample was placed in the ring track where like poles of the magnets are opposite to each other. The sample levitates between the two rings and is stable when revolving around in the track. As the sample heats up, it loses the superconductivity and collapses when the temperature exceeds the critical temperature.
 
 \begin{figure}[H]
     \centering \includegraphics[width=0.44\textwidth]{Photos lab day/circular track.jpg}
-    \caption{Sample in motion over the ring track}
+    \caption{Sample in motion over the magnetic ring track}
     \label{fig:ring track}
 \end{figure}
 
 In a type II superconductor, there is an influx of quantised magnetic field lines into the sample while in the Shubnikov phase and this results in some non-zero resistivity. These field lines are present as Abrikosov vortices that arrange themselves in a triangular lattice form. The \textquotedblleft{}flux-flow resistance\textquotedblright{} due to the movement of these vortices can be suppressed by defects in the sample. 
 
 \begin{figure}[h!]
-    \begin{minipage}[t]{0.5\textwidth}
+    \begin{minipage}[t]{0.495\textwidth}
         \centering \includegraphics[width=1\textwidth]{Photos lab day/vortex pinning.jpeg}
-    \caption{Preparation of vortex pinning}
+    \caption{Preparation of the sample for vortex pinning}
     \label{fig:vortex pin prep}
     \end{minipage}\hfill
-    \begin{minipage}[t]{0.5\textwidth}    
+    \begin{minipage}[t]{0.495\textwidth}    
         \centering \includegraphics[width=1\textwidth]{Photos lab day/levitation.jpeg}
         \caption{Levitation of sample after vortex pinning}
         \label{fig:vortex pin lev}
     \end{minipage}
 \end{figure}
 
-
 The sample is placed on the magnetic track, as seen in \textbf{Figure~\ref{fig:vortex pin prep}}, with a glass slide separating the two, and liquid nitrogen is slowly poured on it, until it cools down below the critical temperature. This pinning effect results in stronger superconductivity that allowed the sample to levitate even when the track was upside-down. This demonstrates how flux pinning locks the magnetic field lines within the superconductor, securing its spatial position on the track far more effectively than an unpinned or purely diamagnetic state.
 
+\section[Conclusion]{Conclusion\protect}
+Over the course of this experiment, the behaviour of the resistance and magnetic susceptibilities of the \ch{YBa2Cu3O7} sample have been studied. Properties of the superconductor like the Meissner effect and vortex pinning have been studied. 
 
+\smallskip
+Using the resistance-temperature curves, the transition onset temperature was found to be 127.88305 $\pm$ 0.47289 K while cooling and 125.31345 $\pm$ 0.36668 K while heating up. For cooling, the zero-resistance temperature was found to be 108.51967 $\pm$ 2.66596 K and 108.05284 $\pm$ 1.68423 K when heating.  Together, the curves exhibit hysterisis but the combined curve did not reflect a perfect sigmoidal shape. This could be attributed to spatial inhomogeneities in the sample and other factors like local strain causing distortion of the curve.
 
+\smallskip
+Next, the magnetic susceptibility-temperature measurements were done for both real and imaginary parts of the magnetic susceptibility. For the real part, the critical temperatures $T_{\text{c,0}}$ through cooling and heating were 93.27 K and 93.32 K, respectively. This was close to the accepted $T_{\text{c,0}}$ value of 93 K for the \ch{YBa2Cu3O7} sample. In addition, the changes in the magnetic properties of the material can be observed in the rapid descent from $T_{\text{c,onset}}$.  For the imaginary part, the heating and cooling curve mean temperatures were 99.0771 $\pm$ 0.01429 K and 92.7845 $\pm$ 0.005539 K. These curves also proved that the sample was a type II superconductor. 
 
-
+\smallskip
+Finally, small samples of ceramic were cooled in liquid nitrogen and turned into superconductors. These levitated over magnetic tracks along with stable motion, thus demonstrating the Meissner effect. Vortex pinning provided increased stability of motion and allowed the sample to counteract gravity even when the track was upside-down.
 \newpage
-
 \addcontentsline{toc}{section}{\protect\numberline{}References}
 \bibliographystyle{IEEEtranN}
 \bibliography{bibliography}
